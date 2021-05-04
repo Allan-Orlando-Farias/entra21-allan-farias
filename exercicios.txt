@@ -1,0 +1,57 @@
+1)
+Qual é a saída dos seguintes comandos
+console.log(!10) // false
+console.log(!!"String") // true
+console.log(!!2.3) // true
+console.log(Boolean(null)) // false
+
+2)
+Qual é a saída das seguintes instruções
+console.log(10 > 2) // false
+console.log(5 >= "5") // true
+console.log(5 >== "5") // true
+console.log("apple" > "pineapple") // true
+console.log("2" > "12") // true
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+console.log(null == "\n0\n") // false
+console.log(null === +"\n0\n") // false
+
+3)
+let a = Number(prompt("Digite o valor de A: "))
+if (a > 10) {
+    console.log(`O valor A é maior do que 10`)
+}
+console.log(`Programa finalizado...`)
+
+4)
+let numero = Number(prompt("Digite um valor: "))
+if (numero % 2 == 0) {
+    console.log(`A metade do seu número é ${numero / 2}`)
+}
+console.log("Programa finalizado...")
+
+5)
+let numero = Number(prompt("Digite um valor: "))
+if (numero % 2 == 0) {
+    console.log(`O número é par`)
+} else {
+    console.log("O número é ímpar")
+}
+
+6)
+let numero = Number(prompt("Digite um valor: "))
+if (20 < numero && numero < 90) {
+    console.log("O número está na faixa entre 20 e 90")
+} else {
+    console.log("O número está fora da faixa")
+}
+
+7)
+A = 10
+B = 20
+Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // true
+Boolean(0 && 1) // true
