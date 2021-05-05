@@ -55,3 +55,185 @@ Boolean(A > 10 || B <= 20) // true
 Boolean((A === 10 || B > 20) && B === 20) // true
 console.log(null || 2 || undefined) // true
 Boolean(0 && 1) // true
+
+8)
+let A = Number(prompt("Digite um valor para A: "))
+let B = Number(prompt("Digite um valor para B: "))
+let C = Number(prompt("Digite um valor para C: "))
+if (A > B && A > C ) {
+    console.log(`O maior número é ${A}`)
+} else if (B > C && B > C) {
+    console.log(`O maior número é ${B}`)
+} else {
+    console.log(`O maior número é ${C}`)
+}
+
+9)
+let resultado = ""
+a + b < 4 ? resultado = "Abaixo" : resultado = "Acima"
+
+10)
+let lado1 = Number(prompt("Qual é a medida do lado 1: "))
+let lado2 = Number(prompt("Qual é a medida do lado 2: "))
+let lado3 = Number(prompt("Qual é a medida do lado 3: "))
+if (lado1 === lado2 && lado1 === lado3) {
+    console.log("O seu triângulo é Equilátero")
+} else if (lado1 === lado2 || lado1 === lado3) {
+    console.log("O seu triângulo é Isósceles")
+} else {
+    console.log("O seu triângulo é Escaleno")
+}
+
+11)
+let numero = Number(prompt("Digite um número negativo ou positivo: "))
+if (numero > 0) {
+    console.log(Math.sqrt(numero))
+} else {
+    console.log("\033[31mO seu número é inválido!")
+}
+
+12)
+let numero = Number(prompt("Digite um número: "))
+if (numero % 5 == 0) {
+    console.log("O seu número é divisível por 5")
+} else {
+    console.log("O seu número não é divisível por 5")
+}
+
+13) 
+let numero = Number(prompt("Digite um numero: "))
+if (numero > 0) {
+    console.log(`A raíz quadrada de ${numero} é ${Math.sqrt(numero)}`)
+} else {
+    console.log(`${numero} ao quadrado é ${numero ** 2}`)
+}
+
+14)
+let salario = Number(prompt("Qual é o seu salário? "))
+let emprestimo = Number(prompt("Qual é o valor das prestações do seu empréstimo? "))
+let pagavel = salario * 20 /100
+if(emprestimo > pagavel) {
+    console.log("Empréstimo não concedido!")
+} else {
+    console.log("Empréstimo concedido!")
+}
+
+15)
+let placar1 = Number(prompt("Qual é placar do jogo com os gols do primeiro time: "))
+let placar2 = Number(prompt("Qual é placar do jogo com os gols do segundo time: "))
+if (placar1 === placar2) {
+    console.log("O placar ficou empatado!")
+} else if (placar1 > placar2) {
+    console.log("O primeiro time ganhou!")
+} else {
+    console.log("O segundo time ganhou!")
+}
+
+16)
+let idade = Number(prompt("Qual é a sua idade? "))
+if (idade < 16) {
+    console.log("Não precisa votar!")
+} else if (idade === 16) {
+    console.log("Voto opcional")
+} else {
+    console.log("Voto obrigatório!")
+}
+
+17)
+let a = Number(prompt("Digite um número: "))
+let b = Number(prompt("Digite um outro número: "))
+let c = Number(prompt("Digite um outro número: "))
+let numeros = [a, b, c]
+numeros.sort(function(a, b){return -a, -b})
+console.log(numeros)
+
+18)
+let diaDaSemana = Number(prompt("Digite um número de 1 a 7: "))
+switch (diaDaSemana) {
+    case 1:
+        console.log("Domingo!")
+        break;
+    case 2:
+        console.log("Segunda-Feira!")
+        break
+    case 3:
+        console.log("Terça-Feira!")
+        break
+    case 4:
+        console.log("Quarta-Feira!")
+        break
+    case 5:
+        console.log("Quinta-Feira!")
+        break
+    case 6:
+        console.log("Sexta-Feira!")
+        break
+    case 7:
+        console.log("Sábado!")
+        break
+}
+
+19)
+let idade = Number(prompt("Qual é a sua idade? "))
+if (idade < 18|| idade > 67) {
+    console.log("Você não pode doar sangue")
+} else {
+    console.log("Você pode doar sangue")
+}
+
+20)
+let numero = Number(prompt("Digite um número de 1 a 12: "))
+switch (numero) {
+    case 1:
+        console.log("Janeiro")
+        break;
+    case 2:
+        console.log("Fevereiro")
+        break;
+    case 3:
+        console.log("Março")
+        break;
+    case 4:
+        console.log("Abril")
+        break;
+    case 5:
+        console.log("Maio")
+        break;
+    case 6:
+        console.log("Junho")
+        break;
+    case 7:
+        console.log("Julho")
+        break;
+    case 8:
+        console.log("Agosto")
+        break;
+    case 9:
+        console.log("Setembro")
+        break;
+    case 10:
+        console.log("Outubro")
+        break;
+    case 11:
+        console.log("Novembro")
+        break;
+    case 12:
+        console.log("Dezembro")
+        break;
+}
+
+21)
+let turno = prompt("Em que turno você estuda?\n[ M ] para matutino\n[ V ] para vespertino\n[ N ] para noturno").toUpperCase()
+switch (turno) {
+    case "M":
+        console.log("Bom Dia!")
+        break;
+    case "V":
+        console.log("Boa Tarde!")
+        break;
+    case "N":
+        console.log("Boa Noite!")
+        break;
+        default:
+            console.log("\033[31mValor Inválido!")
+}
