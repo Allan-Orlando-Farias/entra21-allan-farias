@@ -170,6 +170,8 @@ switch (diaDaSemana) {
     case 7:
         console.log("Sábado!")
         break
+    default:
+        console.log("\033[31mValor Inválido!")
 }
 
 19)
@@ -219,6 +221,8 @@ switch (numero) {
     case 12:
         console.log("Dezembro")
         break;
+    default:
+        console.log("\033[31mValor Inválido!")
 }
 
 21)
