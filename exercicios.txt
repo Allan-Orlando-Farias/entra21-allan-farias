@@ -7,10 +7,10 @@ console.log(Boolean(null)) // false
 
 2)
 Qual é a saída das seguintes instruções
-console.log(10 > 2) // false
+console.log(10 > 2) // true
 console.log(5 >= "5") // true
 console.log(5 >== "5") // true
-console.log("apple" > "pineapple") // true
+console.log("apple" > "pineapple") // false
 console.log("2" > "12") // true
 console.log(undefined == null) // true
 console.log(undefined === null) // false
@@ -62,7 +62,7 @@ let B = Number(prompt("Digite um valor para B: "))
 let C = Number(prompt("Digite um valor para C: "))
 if (A > B && A > C ) {
     console.log(`O maior número é ${A}`)
-} else if (B > C && B > C) {
+} else if (B > C && B > A) {
     console.log(`O maior número é ${B}`)
 } else {
     console.log(`O maior número é ${C}`)
