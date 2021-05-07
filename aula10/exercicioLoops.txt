@@ -1,0 +1,40 @@
+1)
+/* let i = 0
+for (i; i < 10; i++) {
+    console.log("Olá, Mundo!")
+}
+*/
+/* let i = 0
+while (i < 10) {
+    console.log("Olá, Mundo!")
+    i++
+}
+*/
+/*
+let i = 0
+do {
+    console.log("Olá, Mundo!")
+    i++
+} while (i < 10)
+*/
+
+2)
+/*
+for (let i = 0; i < 10; ++i) {
+    console.log(`Estou aparecendo na tela ${i + 1}`)
+}
+*/
+/*
+let i = 0
+while (i < 10) {
+    console.log(`Estou aparecendo na tela ${++i}`)
+}
+*/
+/*
+let i = 0
+do {
+    console.log(`Estou aparecendo na tela ${++i}`)
+} while (i < 10)
+*/
+
+3)
