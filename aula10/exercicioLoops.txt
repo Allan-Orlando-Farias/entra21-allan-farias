@@ -146,3 +146,13 @@ for (let i = 1; i <= 15; i++) {
 }
 
 14)
+let numero = +prompt("Digite um número")
+let n = numero
+
+for (let i = numero - 1; i > 0; i--) {
+    n *= i
+}
+
+console.log(n)
+
+15)
