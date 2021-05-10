@@ -19,22 +19,130 @@ do {
 */
 
 2)
-/*
+// USANDO O FOR
 for (let i = 0; i < 10; ++i) {
     console.log(`Estou aparecendo na tela ${i + 1}`)
 }
-*/
-/*
+
+// USANDO O WHILE
 let i = 0
 while (i < 10) {
     console.log(`Estou aparecendo na tela ${++i}`)
 }
-*/
-/*
+
+// USANDO O DO/WHILE
 let i = 0
 do {
     console.log(`Estou aparecendo na tela ${++i}`)
 } while (i < 10)
-*/
 
 3)
+let contador = 11
+    for (let i = 11; i > 0; i--) {
+        console.log(--contador)
+    }
+
+4) 
+for (let i = 3; i > 0; i--) {
+    let numero1 = +prompt("Digite um número")
+    let numero2 = +prompt("Digite outro número")
+    let resultado = numero1 - numero2
+    console.log(`${numero1} - ${numero2} = ${resultado}`)
+}
+
+5)
+let numero = 0
+for (let i = 100; i > 0; i--) {
+    numero += 1000 
+    let final = numero
+    console.log(final)
+}
+
+6)
+let soma = 0
+let media = 0
+
+for (let i = 5; i > 0; i--) {
+    let valor = +prompt("Digite um valor")
+    soma += valor
+    media += valor / 5
+}
+
+console.log(`A soma é ${soma}\nE a média é ${media.toFixed(2)}`)
+
+7)
+let n = +prompt("Digite um valor")
+for (let i = 0; i <= n; i++) {
+    if (i % 2 === 1) {
+        console.log(i)
+    }
+}
+
+8)
+let numero = +prompt("Digite um numero")
+for (let i = 1; i <= 10; i++) {
+    let conta = numero * i
+    console.log(`${numero} x ${i} = ${conta}`)
+}
+
+9)
+let soma = 0
+for (let i = 0; i < 5; i++) {
+    let valor = +prompt("Digite um valor")
+    if (valor < 0) {
+        soma += 1
+    }
+}
+console.log(`Apareceu ${soma} números negativos`)
+
+10)
+let par = 0
+let impar = 0
+for (let i = 0; i < 10; i++) {
+    let numero = +prompt("Digite um valor")
+    if (numero % 2 === 0) {
+        par += 1
+    } else {
+        impar += 1
+    }
+}
+console.log(`Pares: ${par}\nÍmpares ${impar}`)
+
+11)
+let intervalo = 0
+let fora = 0
+while (true) {
+    let numero = +prompt("Digite um número")
+    if (numero < 0) {
+        break
+    } else if (numero >= 10 && numero <= 20) {
+        intervalo += 1
+    } else {
+        fora +=1
+    }
+}
+console.log(`${intervalo} números estão no intervalo`)
+console.log(`${fora} números estão fora do intervalo`)
+
+12)
+let media = 0
+let cont = 0
+while (true) {
+    let numero = +prompt("Digite um numero")
+    if (numero < 0) {
+        break
+    }
+    cont ++
+    media += numero
+    calculo = media / cont
+    
+}
+console.log(calculo.toFixed(2))
+
+13)
+for (let i = 1; i <= 15; i++) {
+    let calculo = 7 * i
+    console.log(calculo)
+}
+
+14)
