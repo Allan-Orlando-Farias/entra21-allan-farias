@@ -146,3 +146,52 @@ for (let i = 1; i <= 15; i++) {
 }
 
 14)
+
+
+15)
+let cont = 0
+let mediaSalarial = 0
+let maior = 0
+let mediaFilho = 0
+
+while (true) {
+    let salario = +prompt("Digite o seu salário")
+    if (salario < 0) break
+    if (salario > maior) maior = salario 
+    let filhos = +prompt("Quantos filhos você tem?")
+    cont += 1
+    mediaSalarial += salario
+    mediaFilho += filhos
+
+}
+
+mediaSalarial /= cont
+mediaFilho /= cont
+console.log(`Média salarial: ${mediaSalarial.toFixed(2)}`)
+console.log(`Média de filhos: ${mediaFilho.toFixed(2)}`)
+console.log(`Maior salário: ${maior.toFixed(2)}`)
+
+16)
+
+17)
+let valor1 = 0
+let valor2 = 0
+let valor3 = 0
+let valor4 = 0
+let valor5 = 0
+
+alert("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco")
+
+while (true) {
+    let voto = +prompt("Voto:")
+    if (voto === 0) break
+    if (voto === 1) valor1 += 1
+    if (voto === 2) valor2 += 1
+    if (voto === 3) valor3 += 1
+    if (voto === 4) valor4 += 1
+    if (voto === 5) valor5 += 1
+
+}
+console.log(`Total de votos:\nJosé Bolinha: ${valor1}\nMaria Nascimento: ${valor2}\nJoão da Silva: ${valor3}\nVoto nulo: ${valor4}\nVoto em branco: ${valor5}`)
+
+18)

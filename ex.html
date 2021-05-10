@@ -7,7 +7,13 @@
 </head>
 <body>
     <script>
-        
+        let n = +prompt("Digite um número")
+        let calculo = 0
+
+        for (let i = n; i > 0; i--) {
+            calculo = n * (n - 1) * (n - 2)
+        }
+        console.log(calculo)
     </script>
 </body>
 </html> 
