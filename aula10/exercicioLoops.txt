@@ -178,7 +178,22 @@ console.log(`Média de filhos: ${mediaFilho.toFixed(2)}`)
 console.log(`Maior salário: ${maior.toFixed(2)}`)
 
 16)
+let valorMaior = 0
+let valorMenor = 0
 
+for(let i = 0; i < 5; i++) {
+    let numero = +prompt("Insira um valor:")
+
+    if (numero > valorMaior) {
+        valorMaior = numero
+        valorMenor = numero
+    }
+    if (numero < valorMenor) {
+        valorMenor = numero
+    }
+}
+console.log(`O menor valor digitado foi: ${valorMenor}`)
+console.log(`O maior valor digitado foi: ${valorMaior}`)
 
 17)
 let valor1 = 0
@@ -191,6 +206,7 @@ alert("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nul
 
 while (true) {
     let voto = +prompt("Voto:")
+    
     if (voto === 0) break
     if (voto === 1) valor1 += 1
     if (voto === 2) valor2 += 1
@@ -202,3 +218,52 @@ while (true) {
 console.log(`Total de votos:\nJosé Bolinha: ${valor1}\nMaria Nascimento: ${valor2}\nJoão da Silva: ${valor3}\nVoto nulo: ${valor4}\nVoto em branco: ${valor5}`)
 
 18)
+
+
+19)
+while (true) {
+    let codigo = prompt("Digite o seu codigo")
+
+    if (codigo == 0) {
+        break
+    }
+
+    let nota1 = +prompt("Digite a primeira nota")
+    let nota2 = +prompt("Digite a segunda nota")
+    let nota3 = +prompt("Digite a terceira nota")
+    let media = (nota1 + nota2 + nota3) / 3
+
+    console.log(`A média do aluno com a matrícula ${codigo} é ${media.toFixed(2)}`)
+}
+
+20)
+let i = +prompt("Digite um número inicial")
+let num = +prompt("Digite um número final")
+let soma = 0
+let multiplicacao = 1
+
+for (i; i <= num; i++) {
+    if (i % 2 === 0) {
+        soma += i
+    }
+    if (i % 2 === 1) {
+        multiplicacao *= i
+    }
+} 
+
+console.log(`A soma dos números pares: ${soma}`)
+console.log(`Multiplicação dos ímpares: ${multiplicacao}`)
+
+21)
+let numero = +prompt("Digite um numero")
+let primo = 0
+
+for(let count = 1; count <= numero; count++)
+if(numero % count == 0)
+    primo++
+
+if(primo == 2)
+    console.log('É primo')
+else {
+    console.log('Não é primo')
+}

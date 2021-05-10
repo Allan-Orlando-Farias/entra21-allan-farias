@@ -7,13 +7,18 @@
 </head>
 <body>
     <script>
-        let n = +prompt("Digite um número")
-        let calculo = 0
+        let numero = +prompt("Digite um numero")
+        let primo = 0
 
-        for (let i = n; i > 0; i--) {
-            calculo = n * (n - 1) * (n - 2)
+        for(let count = 1; count <= numero; count++)
+            if(numero % count == 0)
+            primo++
+        
+        if(primo == 2)
+            console.log('É primo')
+        else {
+            console.log('Não é primo')
         }
-        console.log(calculo)
     </script>
 </body>
 </html> 
