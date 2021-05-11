@@ -227,7 +227,7 @@ for (let i = 1; i <= 4; i++) {
     if (media >= 5.0 && media <= 6.9) console.log("C")
     if (media >= 7.0 && media <= 8.9) console.log("B")
     if (media >= 9.0 && media <= 10.0) console.log("A")
-    }
+}
 
 19)
 while (true) {
