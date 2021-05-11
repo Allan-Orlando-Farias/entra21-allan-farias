@@ -74,7 +74,7 @@ console.log(`A soma é ${soma}\nE a média é ${media.toFixed(2)}`)
 let n = +prompt("Digite um valor")
 for (let i = 0; i <= n; i++) {
     if (i % 2 === 1) {
-        console.log(i)
+        console.log(`${i},`)
     }
 }
 
@@ -264,15 +264,13 @@ console.log(`A soma dos números pares: ${soma}`)
 console.log(`Multiplicação dos ímpares: ${multiplicacao}`)
 
 21)
-let numero = +prompt("Digite um numero")
-let primo = 0
+for(let limite = 2; limite < 72; limite++) {
+            
+let naoPrimo = false
 
-for(let count = 1; count <= numero; count++)
-if(numero % count == 0)
-    primo++
+for(let i = 2; i <= limite; i++) {
+    if(limite % i === 0 && i != limite) naoPrimo = true
+}
 
-if(primo == 2)
-    console.log('É primo')
-else {
-    console.log('Não é primo')
+if (naoPrimo === false) console.log(limite)
 }
