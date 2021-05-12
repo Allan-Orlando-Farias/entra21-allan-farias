@@ -7,29 +7,15 @@
 </head>
 <body>
     <script>
-        let contadorNumerosPrimos = 0
-        let numeroAtual = 2    
-        let flag = false
-        let primos = ""
+        let vetor = 0
+        let vetor2 = vetor.slice(1, 5);
 
-        while (contadorNumerosPrimos < 20) {            
-            for (let i = 2; i < numeroAtual; i++) {
-                if (numeroAtual % i === 0) {
-                    flag = true
-                    break
-                }
-            }
-
-            if (!flag) {
-                primos += `${numeroAtual} `
-                contadorNumerosPrimos++
-            }
-
-            flag = false
-            numeroAtual++
+        for (let i = 0; i < 5; i++) {
+            vetor[i] = +prompt(`Digite o valor para a posição ${i + 1}`)
         }
 
-        console.log(primos)
+        console.log(vetor)
+        console.log(vetor.reverse())
     </script>
 </body>
 </html> 
