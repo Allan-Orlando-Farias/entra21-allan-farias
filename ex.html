@@ -7,15 +7,15 @@
 </head>
 <body>
     <script>
-        let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
+        let base = +prompt("Digite a base")
+        let expoente = +prompt("Digite o expoente")
+        let conta = 0
 
-        nome = (prompt("Digite um nome"))
-        
-        if (vetor.indexOf(nome) != -1) {
-            console.log("Achei")
-        } else {
-            console.log("Não achei")
+        for (let i = 0; i < 2; i++) {
+            conta = base * expoente
         }
+
+        console.log(conta)
     </script>
 </body>
 </html> 
