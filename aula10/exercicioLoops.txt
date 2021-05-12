@@ -214,10 +214,10 @@ let valor3 = 0
 let valor4 = 0
 let valor5 = 0
 
-alert("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco")
+alert("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco\nVoto:")
 
 while (true) {
-    let voto = +prompt("Voto:")
+    let voto = +prompt("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco\nVoto:")
     
     if (voto === 0) break
     if (voto === 1) valor1 += 1
