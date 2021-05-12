@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
-        
+            for(let limite = 2; limite < 72; limite++) {
+            
+                let naoPrimo = false
+
+                for(let i = 2; i <= limite; i++) {
+                    if(limite % i === 0 && i != limite) naoPrimo = true
+                }
+
+                if (naoPrimo === false) console.log(limite)
+            }
     </script>
 </body>
 </html> 

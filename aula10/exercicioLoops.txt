@@ -54,8 +54,7 @@ for (let i = 3; i > 0; i--) {
 let numero = 0
 for (let i = 100; i > 0; i--) {
     numero += 1000 
-    let final = numero
-    console.log(final)
+    console.log(numero)
 }
 
 6)
