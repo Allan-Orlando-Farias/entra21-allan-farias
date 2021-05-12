@@ -1,0 +1,64 @@
+1)
+let vetor = []
+let pares = 0
+
+for (let i = 0; i < 10; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1}° valor`)
+}
+
+for (let i = 0, tamanhoVetor = vetor.length; i < tamanhoVetor; i++) {
+    if (vetor[i] % 2 === 0) {
+        console.log(vetor[i])
+        pares++
+    }
+}
+
+console.log(`O vetor possui ${pares} valores(s) pares`)
+
+
+2)
+let vetor = []
+
+for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt(`Digite ${i + 1}° valor`)
+}
+
+let maior = Math.max.apply(null, vetor)
+console.log(`O maior número é ${maior}, que se encontra na ${vetor.indexOf(maior, 1) + 1}° posição`)
+console.log(vetor)
+
+
+3)
+let vetor = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o valor para ${i + 1}° posição`)
+}
+
+console.log(`O menor valor é ${Math.max.apply(null, vetor)}`)
+console.log(`O maior valor é ${Math.min.apply(null, vetor)}`)
+
+
+4)
+let vetor = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o valor para a posição ${i + 1}`)
+}
+
+
+let inverso = vetor.slice()
+console.log(vetor)
+console.log(inverso.reverse())
+
+
+5)
+let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
+
+nome = (prompt("Digite um nome"))
+
+if (vetor.indexOf(nome) != -1) {
+    console.log("Achei")
+} else {
+    console.log("Não achei")
+}
