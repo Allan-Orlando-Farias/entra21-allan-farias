@@ -7,16 +7,29 @@
 </head>
 <body>
     <script>
-            for(let limite = 2; limite < 72; limite++) {
-            
-                let naoPrimo = false
+        let contadorNumerosPrimos = 0
+        let numeroAtual = 2    
+        let flag = false
+        let primos = ""
 
-                for(let i = 2; i <= limite; i++) {
-                    if(limite % i === 0 && i != limite) naoPrimo = true
+        while (contadorNumerosPrimos < 20) {            
+            for (let i = 2; i < numeroAtual; i++) {
+                if (numeroAtual % i === 0) {
+                    flag = true
+                    break
                 }
-
-                if (naoPrimo === false) console.log(limite)
             }
+
+            if (!flag) {
+                primos += `${numeroAtual} `
+                contadorNumerosPrimos++
+            }
+
+            flag = false
+            numeroAtual++
+        }
+
+        console.log(primos)
     </script>
 </body>
 </html> 
