@@ -37,3 +37,14 @@ console.log(`O menor valor é ${Math.max.apply(null, vetor)}`)
 console.log(`O maior valor é ${Math.min.apply(null, vetor)}`)
 
 4)
+let vetor = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o valor para a posição ${i + 1}`)
+}
+
+let inverso = vetor.slice()
+console.log(vetor)
+console.log(inverso.reverse())
+
+5)
