@@ -1,0 +1,89 @@
+// DECLARANDO E MOSTRANDO UMA MATRIZ
+let matriz = []
+for (let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 3; j++) {
+        matriz[i][j] = +prompt("Digite um número")
+    }
+}
+
+let mostrandoMatriz = ""
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        mostrandoMatriz += matriz2[i][j] + "\t"
+    }
+    mostrandoMatriz += "\n"
+}
+console.log(mostrandoMatriz)
+}
+
+1)
+let matriz = []
+let quantidadeMaior10 = 0
+
+for(let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 3; j++) {
+        matriz[i][j] = +prompt("Digite um número para a linha ${i} e coluna ${j}")
+
+        if (matriz[i][j] > 10) {
+            quantidadeMaior10++
+        } 
+    }
+}
+
+console.log(`Essa matriz possui ${quantidadeMaior10} números maiores que 10`)
+
+2)
+let matriz = []
+
+for (let i = 0; i < 5; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 5; j++) {
+        matriz[i][j] = 0
+    }
+}
+
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+    matriz[i++][j] = 1
+    }
+}
+let mostrandoMatriz = ""
+
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        mostrandoMatriz += matriz[i][j] + "\t"
+    }
+    mostrandoMatriz += "\n"
+}
+
+console.log(mostrandoMatriz)
+
+3)
+// INCOMPLETO
+let matriz = []
+let numero = +prompt("Digite um número")
+let linha = 0
+let coluna = 0
+
+for (let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 3; j++) {
+        matriz[i][j] = +prompt(`Digite um número para a linha ${i + 1} na coluna ${j + 1}`)
+
+        if (numero === matriz[i][j]) {
+            numero = true
+            linha = i
+            coluna = j
+        }
+    }
+}
+
+if (numero == true) {
+    console.log(`Valor encontrado na linha ${linha + 1} e na coluna ${coluna + 1}`)
+} else {
+    console.log("Valor não encontrado")
+}
+
+4)
