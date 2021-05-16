@@ -109,18 +109,77 @@ console.log(vetorAoQuadrado)
 
 8)
 let vetor = []
+
 for (let i = 0; i < 6; i++) {
     numero = +prompt("Digite números pares")
     if (numero % 2 === 0) {
         vetor[i] = numero
-
+    
     } else {
         i--
-        console.log("Digite um numero par!")
+        alert("Digite um numero par!")
     }
 }
 
+for (let left = 0, right = 6; left < right; left += 1, right -= 1) {
+    let temporary = vetor[left]
+    vetor[left] = vetor[right]
+    vetor[right] = temporary
+}
+
+vetor.shift()
+vetor = String(vetor)
 console.log(vetor)
 
 
 9)
+let vetor = []
+let soma = 0
+
+for (let i = 0; i < 8; i++) {
+    vetor[i] = +prompt(`Digite um número para a posição ${i}`)
+}
+
+let x = +prompt("Digite um número")
+let y = +prompt("Digite um número")
+
+if (x > 0 && x < 8 ){
+    soma += vetor[x]
+} else {
+    while (true) {
+        let x = +prompt("Digite um número")
+        if (x > 0 && x < 8 )
+            break
+    }
+}
+
+if (y > 0 && y < 8 ){
+    soma += vetor[y]
+} else {
+    while (true) {
+        let y = +prompt("Digite um número")
+        if (y > 0 && y < 8 )
+            break
+    }
+}
+
+vetor = String(vetor)
+console.log(vetor)
+console.log(`A soma dos valores nas posições ${x} e ${y} é ${soma}`)
+
+
+10)
+let vetor = []
+let qtdNegativo = 0
+let soma = 0
+
+for (let i = 0; i < 10; i++) {
+    vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
+    vetor[i] < 0 ? qtdNegativo += 1 : soma += vetor[i]
+}
+
+console.log(`Foi digitado ${qtdNegativo} números negativos`)
+console.log(`A soma dos números positivos digitados é ${soma}`)
+
+
+11)

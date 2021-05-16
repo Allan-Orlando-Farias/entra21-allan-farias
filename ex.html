@@ -8,18 +8,23 @@
 <body>
     <script>
         let vetor = []
-        for (let i = 0; i < 6; i++) {
-            numero = +prompt("Digite números pares")
-            if (numero % 2 === 0) {
-                vetor[i] = numero
-            
+        let maior = 0
+        let menor = +prompt("Digite um numero").
+
+        for (let i = 0; i < 10; i++) {
+            vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
+            if (vetor[i] < menor) {
+                menor = vetor[i]
             } else {
-                i--
-                console.log("Digite um numero par!")
+                vetor.push(menor)
+            }
+
+            if(vetor[i] > maior) {
+                maior = vetor[i]
             }
         }
         
-        console.log(vetor)
+        console.log(`O maior valor se encontra na posição ${maior[i]}`)
     </script>
 </body>
 </html> 
