@@ -7,29 +7,27 @@
 </head>
 <body>
     <script>
-        let cont25 = 0
-        let cont50 = 0
-        let cont75 = 0
+        let n = +prompt("Insira um número positivo")
+        let proximo = 0
+        let anterior = 1
+        let mostra = []
+        mostra = String(mostra)
+        mostra.split
 
-        while (true) {
-            let numero = +prompt("Digite um numero")
+        for(let i = 0; i < n; ++i) {
 
-            if (numero < 0) {
+            mostra = proximo + anterior
+            anterior = proximo
+            proximo = mostra
+
+            if (n < 0) {
                 break
             }
-
-            if (numero <= 25) {
-                cont25++
-            } else if (numero > 25 && numero <= 50) {
-                cont50++
-            } else {
-                cont75++
+            if (proximo === 0) {
+                proximo++
             }
+            console.log(mostra)
         }
-
-        console.log(`Quantidade de números no intervalo [0-25]: ${cont25}`)
-        console.log(`Quantidade de números no intervalo [26-50]: ${cont50}`)
-        console.log(`Quantidade de números no intervalo [50-75]: ${cont75}`)
     </script>
 </body>
 </html> 
