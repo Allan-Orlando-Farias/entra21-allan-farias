@@ -17,7 +17,6 @@ console.log(`O vetor possui ${pares} valores(s) pares`)
 
 
 2)
-// FORMA 1
 let teste = []
 let maior = 0
 
@@ -34,20 +33,7 @@ console.log(`Maior número do vetor: ${maior}`)
 console.log(`Posição do maior número do vetor: ${teste.lastIndexOf(maior)}`)
 
 
-// FORMA 2
-let vetor = []
-
-for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt(`Digite ${i + 1}° valor`)
-}
-
-let maior = Math.max.apply(null, vetor)
-console.log(`O maior número é ${maior}, que se encontra na ${vetor.indexOf(maior, 1) + 1}° posição`)
-console.log(vetor)
-
-
 3)
-// FORMA 1
 let vetor = []
 let maior = 0
 let menor = +prompt("Digite um numero)
@@ -67,19 +53,8 @@ for (let i = 0; i < 4; i++) {
 console.log(`O menor valor é ${menor}`)
 console.log(`O maior valor é ${maior}`)
 
-// FORMA 2
-let vetor = []
-
-for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt(`Digite o valor para ${i + 1}° posição`)
-}
-
-console.log(`O menor valor é ${Math.max.apply(null, vetor)}`)
-console.log(`O maior valor é ${Math.min.apply(null, vetor)}`)
-
 
 4)
-// FORMA 1
 let vetor = []
 let vetor2 = []
 
@@ -94,33 +69,58 @@ console.log(vetor)
 console.log(vetor2)
 
 
-// FORMA 2
-let vetor = []
-
-for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt(`Digite o valor para a posição ${i + 1}`)
-}
-
-
-let inverso = vetor.slice()
-console.log(vetor)
-console.log(inverso.reverse())
-
-
 5)
 // FORMA 1
-
-
-
 
 
 // FORMA 2
 let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
 
-nome = (prompt("Digite um nome"))
+nome = prompt("Digite um nome")
 
 if (vetor.indexOf(nome) != -1) {
     console.log("Achei")
 } else {
     console.log("Não achei")
 }
+
+6)
+let a = [1, 0, 5, -2, -5, 7]
+let soma = a[0] + a[1] + a[5]
+
+console.log(`Soma: ${soma}`)
+a[4] = 100
+
+for (let i = 0; i < 6; i++) {
+    console.log(`${a[i]}\n`)
+}
+
+7)
+let vetor = []
+let vetorAoQuadrado = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite um numero para a posição ${i + 1}`)
+    vetorAoQuadrado[i] = vetor[i] ** 2
+}
+
+console.log(vetor)
+console.log(vetorAoQuadrado)
+
+8)
+let vetor = []
+for (let i = 0; i < 6; i++) {
+    numero = +prompt("Digite números pares")
+    if (numero % 2 === 0) {
+        vetor[i] = numero
+
+    } else {
+        i--
+        console.log("Digite um numero par!")
+    }
+}
+
+console.log(vetor)
+
+
+9)

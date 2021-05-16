@@ -7,27 +7,19 @@
 </head>
 <body>
     <script>
-        let n = +prompt("Insira um número positivo")
-        let proximo = 0
-        let anterior = 1
-        let mostra = []
-        mostra = String(mostra)
-        mostra.split
-
-        for(let i = 0; i < n; ++i) {
-
-            mostra = proximo + anterior
-            anterior = proximo
-            proximo = mostra
-
-            if (n < 0) {
-                break
+        let vetor = []
+        for (let i = 0; i < 6; i++) {
+            numero = +prompt("Digite números pares")
+            if (numero % 2 === 0) {
+                vetor[i] = numero
+            
+            } else {
+                i--
+                console.log("Digite um numero par!")
             }
-            if (proximo === 0) {
-                proximo++
-            }
-            console.log(mostra)
         }
+        
+        console.log(vetor)
     </script>
 </body>
 </html> 
