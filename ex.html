@@ -7,24 +7,27 @@
 </head>
 <body>
     <script>
-        let vetor = []
-        let maior = 0
-        let menor = +prompt("Digite um numero").
-
-        for (let i = 0; i < 10; i++) {
-            vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
-            if (vetor[i] < menor) {
-                menor = vetor[i]
-            } else {
-                vetor.push(menor)
+    let vetor = []
+        let vetor2 = []
+        let interseccao = []
+        
+        for (let i = 0; i < 1; i++) {
+            for (let i = 0; i < 5; i++) {
+                vetor[i] = +prompt("Digite um numero")
             }
-
-            if(vetor[i] > maior) {
-                maior = vetor[i]
+        
+            for (let i = 0; i < 5; i++) {
+                vetor2[i] = +prompt("Digite um numero") 
             }
+        
+            if (vetor[i] == vetor2[i]) {
+                    interseccao = vetor[i]
+                }
         }
         
-        console.log(`O maior valor se encontra na posição ${maior[i]}`)
+        console.log(`Vetor 1: ${vetor}`)
+        console.log(`Vetor 2: ${vetor2}`)
+        console.log(`Intersecção : ${interseccao}`)
     </script>
 </body>
 </html> 

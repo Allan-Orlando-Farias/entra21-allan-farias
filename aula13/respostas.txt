@@ -183,3 +183,133 @@ console.log(`A soma dos números positivos digitados é ${soma}`)
 
 
 11)
+let vetor = []
+let maior = 0
+let menor = 9999
+let menorLugar = 0
+let maiorLugar = 0
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
+    if (vetor[i] < menor) {
+        menor = vetor[i]
+        menorLugar = i
+    }
+
+    if(vetor[i] > maior) {
+        maior = vetor[i]
+        maiorLugar = i
+    }
+}
+
+console.log(`O maior valor se encontra na posição ${maiorLugar + 1}`)
+console.log(`O menor valor se encontra na posição ${menorLugar + 1}`)
+
+
+12)
+let vetor = []
+let qtd1 = 0
+let qtd2 = 0
+let qtd3 = 0
+let qtd4 = 0
+let qtd5 = 0
+let qtd6 = 0
+
+for (let i = 0; i < 100; i++) {
+    vetor[i] = Math.trunc(Math.random() * 6 + 1)
+    switch (vetor[i]) {
+        case 1:
+            qtd1 += 1
+            break
+        case 2:
+            qtd2 += 1
+            break
+        case 3:
+            qtd3 += 1
+            break
+        case 4:
+            qtd4 += 1
+            break
+        case 5:
+            qtd5 += 1
+            break
+        case 6:
+            qtd6 += 1
+    }
+}
+
+console.log(`O número 1 apareceu ${qtd1} vezes\nO número 2 apareceu ${qtd2} vezes\nO número 3 apareceu ${qtd3} vezes`)
+console.log(`O número 4 apareceu ${qtd4} vezes\nO número 5 apareceu ${qtd5} vezes\nO número 6 apareceu ${qtd6} vezes`)
+
+
+13)
+let vetor = []
+let media = 0
+let maior = 0
+let cont = 0
+let soma = 0
+
+while (true) {
+    let nota = +prompt("Digite a sua nota")
+    vetor.push(nota)
+
+    if (nota < 0) {
+        break
+    }
+    
+    soma += nota
+    cont += 1
+
+    if (nota > maior) {
+        maior = nota
+    }
+}
+
+media = soma / cont        
+console.log(`Média da turma: ${media.toFixed(2)}`)
+console.log(`Maior nota: ${maior}`)
+
+
+14)
+let vetor = []
+let vetor2 = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt("Digite um número")
+}
+
+for (let i = 0; i < 5; i++) {
+    vetor2[i] = +prompt("Digite um número")
+}
+
+if (vetor[0] === vetor2[0] && vetor[1] === vetor2[1] && vetor[2] === vetor2[2] && vetor[3] === vetor2[3] && vetor[4] === vetor2[4] && vetor[5] === vetor2[5]) {
+    console.log("Os vetores são iguais")
+} else {
+    console.log("Os vetores são diferentes")
+}
+
+
+15)
+// INCOMPLETO
+
+let vetor = []
+let vetor2 = []
+let interseccao = []
+
+for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt("Digite um numero")
+    }
+
+    for (let i = 0; i < 5; i++) {
+        vetor2[i] = +prompt("Digite um numero") 
+    }
+
+    if (vetor[i] == vetor2[i]) {
+            interseccao = vetor[i]
+        }
+}
+
+console.log(`Vetor 1: ${vetor}`)
+console.log(`Vetor 2: ${vetor2}`)
+console.log(`Intersecção : ${interseccao}`)
