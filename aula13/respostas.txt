@@ -322,7 +322,7 @@ for (let i = inicial; i <= final; i += 2) {
 }
 
 vetor = String(vetor).split("")
-vetor.join(",")
+vetor.join(", ")
 console.log(vetor)
 
 
