@@ -6,38 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <script>let vetor = []
-        let vetor2 = []
-        let interseccao = ""
-        
-        for (let i = 0; i < 1; i++) {
-            for (let i = 0; i < 5; i++) {
-                vetor[i] = prompt("Digite um numero")
-            }
-        
-            for (let i = 0; i < 5; i++) {
-                vetor2[i] = prompt("Digite um numero") 
-            }
-        
-            if (vetor[i] == vetor2[i]) {
-                    interseccao = vetor[i]
-                }
+    <script>
+        let vetor = []
+        let valorSubstituto = 0
+
+        for(let i = 0; i < 10; i++) {
+            let valores = Math.floor(Math.random() * (11 - 1)) + 1
+            vetor[i] = valores
         }
-        
-        for (let i = 0; i < 5; i++) {
-            for (let j = 0; j < 5; j++) {
-                if (vetor[i] == vetor2[j]) {
-                    interseccao += vetor[i]
-                }
+
+        for(let i = 0; i < 10; i++) {
+            if(vetor[i] > vetor[i + 1]) {
+                valorSubstituto = vetor[i]
+                vetor[i] = vetor[i + 1]
+                vetor[i + 1] = valorSubstituto
             }
+
+            for(let i = 0; i < 10; i++) {
+                if(vetor[i] > vetor[i + 1]) {
+                valorSubstituto = vetor[i]
+                vetor[i] = vetor[i + 1]
+                vetor[i + 1] = valorSubstituto
+            }
+
+            }
+
         }
-        
-        interseccao = String(interseccao).split("")
-        interseccao.join(", ")
-        
-        console.log(`Vetor 1: ${vetor}`)
-        console.log(`Vetor 2: ${vetor2}`)
-        console.log(`Intersecção : ${interseccao}`)
+
+        console.log(vetor)
     
     </script>
 </body>
