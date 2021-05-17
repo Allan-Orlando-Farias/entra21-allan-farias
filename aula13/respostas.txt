@@ -204,12 +204,7 @@ console.log(`O menor valor se encontra na posição ${menorLugar + 1}`)
 
 12)
 let vetor = []
-let qtd1 = 0
-let qtd2 = 0
-let qtd3 = 0
-let qtd4 = 0
-let qtd5 = 0
-let qtd6 = 0
+let qtd1 = 0, qtd2 = 0, qtd3 = 0, qtd4 = 0, qtd5 = 0, qtd6 = 0
 
 for (let i = 0; i < 100; i++) {
     vetor[i] = Math.trunc(Math.random() * 6 + 1)
@@ -240,10 +235,7 @@ console.log(`O número 4 apareceu ${qtd4} vezes\nO número 5 apareceu ${qtd5} ve
 
 13)
 let vetor = []
-let media = 0
-let maior = 0
-let cont = 0
-let soma = 0
+let media = 0, maior = 0, cont = 0, soma = 0
 
 while (true) {
     let nota = +prompt("Digite a sua nota")
@@ -288,15 +280,15 @@ if (vetor[0] === vetor2[0] && vetor[1] === vetor2[1] && vetor[2] === vetor2[2] &
 15)
 let vetor = []
 let vetor2 = []
-let interseccao = []
+let interseccao = ""
 
 for (let i = 0; i < 1; i++) {
     for (let i = 0; i < 5; i++) {
-        vetor[i] = +prompt("Digite um numero")
+        vetor[i] = prompt("Digite um numero")
     }
 
     for (let i = 0; i < 5; i++) {
-        vetor2[i] = +prompt("Digite um numero") 
+        vetor2[i] = prompt("Digite um numero") 
     }
 
     if (vetor[i] == vetor2[i]) {
@@ -313,7 +305,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 interseccao = String(interseccao).split("")
-interseccao.join(",")
+interseccao.join(", ")
 
 console.log(`Vetor 1: ${vetor}`)
 console.log(`Vetor 2: ${vetor2}`)

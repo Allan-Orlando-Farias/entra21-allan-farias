@@ -6,40 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let nome = []
-        let preco = []
-        let entre = []
-        let qtdAbaixo = 0, soma = 0, cont = 0, media = 0
-
+    <script>let vetor = []
+        let vetor2 = []
+        let interseccao = ""
+        
+        for (let i = 0; i < 1; i++) {
+            for (let i = 0; i < 5; i++) {
+                vetor[i] = prompt("Digite um numero")
+            }
+        
+            for (let i = 0; i < 5; i++) {
+                vetor2[i] = prompt("Digite um numero") 
+            }
+        
+            if (vetor[i] == vetor2[i]) {
+                    interseccao = vetor[i]
+                }
+        }
+        
         for (let i = 0; i < 5; i++) {
-            nome[i] = String(prompt("Qual o nome do produto?"))
-            preco[i] = +prompt("Qual é o preço do produto?")
-            
-            if (preco[i] < 50.00) {
-                qtdAbaixo += 1
-            }
-
-            if (preco[i] >= 50 && preco[i] <= 100) {
-                entre.push(nome[i])
-            }
-
-            if (preco[i] > 100) {
-                soma += preco[i]
-                cont += 1
+            for (let j = 0; j < 5; j++) {
+                if (vetor[i] == vetor2[j]) {
+                    interseccao += vetor[i]
+                }
             }
         }
         
-        media = soma / cont
-        entre = String(entre).split(" ")
+        interseccao = String(interseccao).split("")
+        interseccao.join(", ")
         
-        if (media != Number) {
-            media = 0
-        }
-
-        console.log(`A quantidade de produtos com preços abaixo de 50: ${qtdAbaixo}`)
-        console.log(`Nome dos produtos com preço entre R$ 50 e R$ 100: ${entre.join(", ")}`)
-        console.log(`Média dos preços superior a R$ 100: ${media}`)
+        console.log(`Vetor 1: ${vetor}`)
+        console.log(`Vetor 2: ${vetor2}`)
+        console.log(`Intersecção : ${interseccao}`)
+    
     </script>
 </body>
 </html> 
