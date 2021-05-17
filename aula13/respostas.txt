@@ -70,15 +70,11 @@ console.log(vetor2)
 
 
 5)
-// FORMA 1
-
-
-// FORMA 2
 let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
 
-nome = prompt("Digite um nome")
+nome = prompt("Digite um nome").toLowerCase()
 
-if (vetor.indexOf(nome) != -1) {
+if (vetor[0] === nome || vetor[1] === nome || vetor[2] === nome || vetor[3] === nome || vetor[4] === nome) {
     console.log("Achei")
 } else {
     console.log("Não achei")
@@ -290,8 +286,6 @@ if (vetor[0] === vetor2[0] && vetor[1] === vetor2[1] && vetor[2] === vetor2[2] &
 
 
 15)
-// INCOMPLETO
-
 let vetor = []
 let vetor2 = []
 let interseccao = []
@@ -309,6 +303,17 @@ for (let i = 0; i < 1; i++) {
             interseccao = vetor[i]
         }
 }
+
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        if (vetor[i] == vetor2[j]) {
+            interseccao += vetor[i]
+        }
+    }
+}
+
+interseccao = String(interseccao).split("")
+interseccao.join(",")
 
 console.log(`Vetor 1: ${vetor}`)
 console.log(`Vetor 2: ${vetor2}`)
@@ -365,13 +370,29 @@ console.log(variavel.join(" "))
 
 
 20)
-// INCOMPLETA
+let notas = []
+let soma = 0
+let media = 0
+
+for (let i = 0; i < 10; i++) {
+    notas[i] = +prompt(`Digite a nota ${i + 1}°`)
+    soma += notas[i]
+}
+
+media = soma / 10
+
+for (let i = 0; i < 10; i++) {
+    if (notas[i] > media) {
+        console.log(`Notas acima da média(${media}): ${notas[i]}`)
+    }
+}
+
+
+21)
 let nome = []
 let preco = []
-let qtdAbaixo = 0
-let entre = ""
-let soma = 0
-let cont = 0
+let entre = []
+let qtdAbaixo = 0, soma = 0, cont = 0, media = 0
 
 for (let i = 0; i < 5; i++) {
     nome[i] = String(prompt("Qual o nome do produto?"))
@@ -382,7 +403,7 @@ for (let i = 0; i < 5; i++) {
     }
 
     if (preco[i] >= 50 && preco[i] <= 100) {
-        entre += nome[i]
+        entre.push(nome[i])
     }
 
     if (preco[i] > 100) {
@@ -391,6 +412,13 @@ for (let i = 0; i < 5; i++) {
     }
 }
 
+media = soma / cont
+entre = String(entre).split(" ")
+
+if (media != Number) {
+    media = 0
+}
+
 console.log(`A quantidade de produtos com preços abaixo de 50: ${qtdAbaixo}`)
-console.log(`Nome dos produtos com preço entre R$ 50 e R$ 100: ${entre}`)
-console.log(`Média dos preços superior a R$ 100: ${soma / cont}`)
+console.log(`Nome dos produtos com preço entre R$ 50 e R$ 100: ${entre.join(", ")}`)
+console.log(`Média dos preços superior a R$ 100: ${media}`)

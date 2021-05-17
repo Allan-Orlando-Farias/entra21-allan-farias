@@ -9,10 +9,8 @@
     <script>
         let nome = []
         let preco = []
-        let qtdAbaixo = 0
-        let entre = ""
-        let soma = 0
-        let cont = 0
+        let entre = []
+        let qtdAbaixo = 0, soma = 0, cont = 0, media = 0
 
         for (let i = 0; i < 5; i++) {
             nome[i] = String(prompt("Qual o nome do produto?"))
@@ -23,7 +21,7 @@
             }
 
             if (preco[i] >= 50 && preco[i] <= 100) {
-                entre += nome[i]
+                entre.push(nome[i])
             }
 
             if (preco[i] > 100) {
@@ -31,10 +29,17 @@
                 cont += 1
             }
         }
+        
+        media = soma / cont
+        entre = String(entre).split(" ")
+        
+        if (media != Number) {
+            media = 0
+        }
 
         console.log(`A quantidade de produtos com preços abaixo de 50: ${qtdAbaixo}`)
-        console.log(`Nome dos produtos com preço entre R$ 50 e R$ 100: ${entre}`)
-        console.log(`Média dos preços superior a R$ 100: ${soma / cont}`)
+        console.log(`Nome dos produtos com preço entre R$ 50 e R$ 100: ${entre.join(", ")}`)
+        console.log(`Média dos preços superior a R$ 100: ${media}`)
     </script>
 </body>
 </html> 
