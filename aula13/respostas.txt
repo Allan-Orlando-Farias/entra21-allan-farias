@@ -55,18 +55,15 @@ console.log(`O maior valor é ${maior}`)
 
 
 4)
-let vetor = []
-let vetor2 = []
+let vetor = [],
+    vetorInverso = []
 
-for (let i = 0; i < 2; i++) {
-    vetor[i] = +prompt(`Digite um valor`)
-    for (let j = 0; j < 2; j++) {
-        vetor2[j] = vetor[i]
-    }
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)    
+    vetorInverso.unshift(vetor[i])
 }
 
-console.log(vetor)
-console.log(vetor2)
+console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
 
 
 5)
