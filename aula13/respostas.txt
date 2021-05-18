@@ -299,7 +299,7 @@ interseccao.join(", ")
 
 console.log(`Vetor 1: ${vetor}`)
 console.log(`Vetor 2: ${vetor2}`)
-console.log(`Intersecção : ${interseccao}`)
+console.log(`Intersecção : ${interseccao}`) //por mais um for para nao repetir interseccao
 
 
 16)
@@ -411,11 +411,11 @@ for (let i = 0; i < 5; i++) {
         qtdAbaixo += 1
     }
 
-    if (preco[i] >= 50 && preco[i] <= 100) {
+    if (preco[i] >= 50.00 && preco[i] <= 100.00) {
         entre.push(nome[i])
     }
 
-    if (preco[i] > 100) {
+    if (preco[i] > 100.00) {
         soma += preco[i]
         cont += 1
     }
