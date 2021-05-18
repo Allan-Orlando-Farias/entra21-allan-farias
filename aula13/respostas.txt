@@ -67,7 +67,7 @@ for (let i = 0; i < 5; i++) {
 console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
 
 
-5)
+5) // Binary Search
 let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
 
 nome = prompt("Digite um nome").toLowerCase()
@@ -246,22 +246,25 @@ console.log(`Maior nota: ${maior}`)
 
 
 14)
-let vetor = []
-let vetor2 = []
+let vetor1 = [],
+    vetor2 = []
 
 for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt("Digite um número")
+    vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
 }
 
+let iguais = true
 for (let i = 0; i < 5; i++) {
-    vetor2[i] = +prompt("Digite um número")
-}
+    vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)
 
-if (vetor[0] === vetor2[0] && vetor[1] === vetor2[1] && vetor[2] === vetor2[2] && vetor[3] === vetor2[3] && vetor[4] === vetor2[4] && vetor[5] === vetor2[5]) {
-    console.log("Os vetores são iguais")
-} else {
+    if (vetor1[i] != vetor2[i]) iguais = false
+}            
+
+console.log(`Vetor 1: ${vetor1}\nVetor 2: ${vetor2}`)
+iguais ? 
+    console.log("Os vetores são iguais") 
+:   
     console.log("Os vetores são diferentes")
-}
 
 
 15)
@@ -271,11 +274,11 @@ let interseccao = ""
 
 for (let i = 0; i < 1; i++) {
     for (let i = 0; i < 5; i++) {
-        vetor[i] = +prompt("Digite um numero")
+        vetor[i] = prompt("Digite um numero")
     }
 
     for (let i = 0; i < 5; i++) {
-        vetor2[i] = +prompt("Digite um numero") 
+        vetor2[i] = prompt("Digite um numero") 
     }
 
     if (vetor[i] == vetor2[i]) {
