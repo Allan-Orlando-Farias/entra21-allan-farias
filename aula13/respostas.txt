@@ -60,7 +60,8 @@ let vetor = [],
 
 for (let i = 0; i < 5; i++) {
     vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)    
-    vetorInverso.unshift(vetor[i])
+    vetorInverso.unshift(vetor[i
+    ])
 }
 
 console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
@@ -114,18 +115,13 @@ for (let i = 0; i < 6; i++) {
     }
 }
 
-for (let left = 0, right = 6; left < right; left += 1, right -= 1) {
-    let temporary = vetor[left]
-    vetor[left] = vetor[right]
-    vetor[right] = temporary
+for (let i = vetor.length - 1; i >= 0; i--) {
+        console.log(vetor[i])
 }
-
-vetor.shift()
-vetor = String(vetor)
-console.log(vetor)
 
 
 9)
+"use strict" //usado para executar o script em JS moderno
 let vetor = []
 let soma = 0
 
@@ -136,12 +132,12 @@ for (let i = 0; i < 8; i++) {
 let x = +prompt("Digite um número")
 let y = +prompt("Digite um número")
 
-if (x > 0 && x < 8 ){
+if (x >= 0 && x < 8 ){
     soma += vetor[x]
 } else {
     while (true) {
-        let x = +prompt("Digite um número")
-        if (x > 0 && x < 8 )
+        x = +prompt("Digite um número")
+        if (x >= 0 && x < 8 )
             break
     }
 }
@@ -150,8 +146,8 @@ if (y > 0 && y < 8 ){
     soma += vetor[y]
 } else {
     while (true) {
-        let y = +prompt("Digite um número")
-        if (y > 0 && y < 8 )
+        y = +prompt("Digite um número")
+        if (y >= 0 && y < 8 )
             break
     }
 }
@@ -168,7 +164,7 @@ let soma = 0
 
 for (let i = 0; i < 10; i++) {
     vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
-    vetor[i] < 0 ? qtdNegativo += 1 : soma += vetor[i]
+    vetor[i] < 0 ? qtdNegativo++ : soma += vetor[i]
 }
 
 console.log(`Foi digitado ${qtdNegativo} números negativos`)

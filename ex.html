@@ -8,17 +8,21 @@
 <body>
     <script>
         let vetor = []
-        let vetor2 = []
 
-        for (let i = 0; i < 2; i++) {
-            vetor[i] = +prompt(`Digite um valor`)
-            for (let j = 0; j < 2; j++) {
-                vetor2[j] = vetor[i]
+        for (let i = 0; i < 6; i++) {
+            numero = +prompt("Digite números pares")
+            if (numero % 2 === 0) {
+                vetor[i] = numero
+            
+            } else {
+                i--
+                alert("Digite um numero par!")
             }
         }
 
-        console.log(vetor)
-        console.log(vetor2)
+        for (let i = vetor.length - 1; i >= 0; i--) {
+                console.log(vetor[i])
+        }
     </script>
 </body>
 </html> 
