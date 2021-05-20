@@ -55,21 +55,19 @@ console.log(`O maior valor é ${maior}`)
 
 
 4)
-let vetor = []
-let vetor2 = []
+let vetor = [],
+    vetorInverso = []
 
-for (let i = 0; i < 2; i++) {
-    vetor[i] = +prompt(`Digite um valor`)
-    for (let j = 0; j < 2; j++) {
-        vetor2[j] = vetor[i]
-    }
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)    
+    vetorInverso.unshift(vetor[i
+    ])
 }
 
-console.log(vetor)
-console.log(vetor2)
+console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
 
 
-5)
+5) // Binary Search
 let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
 
 nome = prompt("Digite um nome").toLowerCase()
@@ -117,18 +115,13 @@ for (let i = 0; i < 6; i++) {
     }
 }
 
-for (let left = 0, right = 6; left < right; left += 1, right -= 1) {
-    let temporary = vetor[left]
-    vetor[left] = vetor[right]
-    vetor[right] = temporary
+for (let i = vetor.length - 1; i >= 0; i--) {
+        console.log(vetor[i])
 }
-
-vetor.shift()
-vetor = String(vetor)
-console.log(vetor)
 
 
 9)
+"use strict" //usado para executar o script em JS moderno
 let vetor = []
 let soma = 0
 
@@ -139,12 +132,12 @@ for (let i = 0; i < 8; i++) {
 let x = +prompt("Digite um número")
 let y = +prompt("Digite um número")
 
-if (x > 0 && x < 8 ){
+if (x >= 0 && x < 8 ){
     soma += vetor[x]
 } else {
     while (true) {
-        let x = +prompt("Digite um número")
-        if (x > 0 && x < 8 )
+        x = +prompt("Digite um número")
+        if (x >= 0 && x < 8 )
             break
     }
 }
@@ -153,8 +146,8 @@ if (y > 0 && y < 8 ){
     soma += vetor[y]
 } else {
     while (true) {
-        let y = +prompt("Digite um número")
-        if (y > 0 && y < 8 )
+        y = +prompt("Digite um número")
+        if (y >= 0 && y < 8 )
             break
     }
 }
@@ -171,7 +164,7 @@ let soma = 0
 
 for (let i = 0; i < 10; i++) {
     vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
-    vetor[i] < 0 ? qtdNegativo += 1 : soma += vetor[i]
+    vetor[i] < 0 ? qtdNegativo++ : soma += vetor[i]
 }
 
 console.log(`Foi digitado ${qtdNegativo} números negativos`)
@@ -179,28 +172,22 @@ console.log(`A soma dos números positivos digitados é ${soma}`)
 
 
 11)
-let vetor = []
-let maior = 0
-let menor = 9999
-let menorLugar = 0
-let maiorLugar = 0
+let vetor = [],
+    posicaoMaior = 0,
+    posicaoMenor = 0
 
 for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt(`Digite um número para a posição ${i + 1}`)
-    if (vetor[i] < menor) {
-        menor = vetor[i]
-        menorLugar = i
-    }
-
-    if(vetor[i] > maior) {
-        maior = vetor[i]
-        maiorLugar = i
+    vetor[i] = +prompt("Digite um número")
+    if (vetor[i] > vetor[posicaoMaior]) {
+        posicaoMaior = i
+    } else if (vetor[i] < vetor[posicaoMenor]) {
+        posicaoMenor = i
     }
 }
 
-console.log(`O maior valor se encontra na posição ${maiorLugar + 1}`)
-console.log(`O menor valor se encontra na posição ${menorLugar + 1}`)
-
+console.log(`Vetor: ${vetor}`)
+console.log(`Posição do maior valor: ${posicaoMaior}`)
+console.log(`Posição do menor valor: ${posicaoMenor}`)
 
 12)
 let vetor = []
@@ -239,12 +226,12 @@ let media = 0, maior = 0, cont = 0, soma = 0
 
 while (true) {
     let nota = +prompt("Digite a sua nota")
-    vetor.push(nota)
 
     if (nota < 0) {
         break
     }
-    
+
+    vetor.push(nota)
     soma += nota
     cont += 1
 
@@ -259,22 +246,25 @@ console.log(`Maior nota: ${maior}`)
 
 
 14)
-let vetor = []
-let vetor2 = []
+let vetor1 = [],
+    vetor2 = []
 
 for (let i = 0; i < 5; i++) {
-    vetor[i] = +prompt("Digite um número")
+    vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
 }
 
+let iguais = true
 for (let i = 0; i < 5; i++) {
-    vetor2[i] = +prompt("Digite um número")
-}
+    vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)
 
-if (vetor[0] === vetor2[0] && vetor[1] === vetor2[1] && vetor[2] === vetor2[2] && vetor[3] === vetor2[3] && vetor[4] === vetor2[4] && vetor[5] === vetor2[5]) {
-    console.log("Os vetores são iguais")
-} else {
+    if (vetor1[i] != vetor2[i]) iguais = false
+}            
+
+console.log(`Vetor 1: ${vetor1}\nVetor 2: ${vetor2}`)
+iguais ? 
+    console.log("Os vetores são iguais") 
+:   
     console.log("Os vetores são diferentes")
-}
 
 
 15)
@@ -309,7 +299,7 @@ interseccao.join(", ")
 
 console.log(`Vetor 1: ${vetor}`)
 console.log(`Vetor 2: ${vetor2}`)
-console.log(`Intersecção : ${interseccao}`)
+console.log(`Intersecção : ${interseccao}`) //por mais um for para nao repetir interseccao
 
 
 16)
@@ -421,11 +411,11 @@ for (let i = 0; i < 5; i++) {
         qtdAbaixo += 1
     }
 
-    if (preco[i] >= 50 && preco[i] <= 100) {
+    if (preco[i] >= 50.00 && preco[i] <= 100.00) {
         entre.push(nome[i])
     }
 
-    if (preco[i] > 100) {
+    if (preco[i] > 100.00) {
         soma += preco[i]
         cont += 1
     }

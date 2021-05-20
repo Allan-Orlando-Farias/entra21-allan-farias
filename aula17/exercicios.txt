@@ -1,0 +1,88 @@
+1)
+"use strict"
+let ehPositivo = numero => numero > 0
+
+let numero = +prompt("Digite um numero")
+
+console.log(ehPositivo(numero))
+
+
+2)
+"use strict"
+let minimo = (a, b) => a < b ? a : b
+
+let a = +prompt("Digite o valor de A"),
+    b = +prompt("Digite o valor de B")
+
+console.log(`O número ${minimo(a, b)} é o menor entre ${a} e ${b}`)
+
+
+3)
+function potencial(a, b) {
+    return a ** b
+}
+
+let a = +prompt("Digite o valor de A"),
+    b = +prompt("Digite o valor de B")
+
+console.log(`O número ${a} elevado a ${b} é ${potencial(a, b)}`)
+
+
+4)
+"use strict"
+function media(a, b, c) {
+    return (a + b + c) / 3
+}
+let a = +prompt("Digite a primeira nota"),
+    b = +prompt("Digite a segunda nota"),
+    c = +prompt("Digite a terceira nota")
+
+console.log(`A média das notas ${a}, ${b}, ${c} é ${media(a, b, c)}`)
+
+
+5)
+function conceitoMedia(media) {
+    if (media < 4.9) {
+        return "D"
+    } else if (media >=5.0 && media <= 6.9) {
+        return "C"
+    } else if (media > 6.9 && media <= 8.9) {
+        return "B"
+    }
+    return "A"
+}
+
+let media = +prompt("Digite a sua média")
+
+console.log(`A sua média foi ${media} e o seu conceito é ${conceitoMedia(media)}`)
+
+
+6)
+"use strict"
+let pesoIdeal = (altura, sexo) => sexo === "F" ?  62.1 * altura - 44.7 : 72.7 * altura - 58
+
+let altura = +prompt("Digite a sua altura"),
+    sexo = String(prompt("Digite o seu sexo [M/F]").toUpperCase())
+
+console.log(`A sua altura é ${altura} e o seu peso ideal é ${pesoIdeal(altura, sexo).toFixed(2)}`)
+
+
+7)
+"use strict"
+let vetor  = []
+function ultimoNumero(vetor) {
+    let ultimo = vetor.length - 1
+    return vetor[ultimo]
+}
+
+function primeiroNumero(vetor) {
+    return vetor[0]
+}
+for (let i = 0; i < 10; i++) {
+    vetor[i] = Math.floor(Math.random() * 10 + 1)
+}
+
+console.log(`O seu vetor é [${vetor}] o seu primeiro número é ${primeiroNumero(vetor)} e o seu último é ${ultimoNumero(vetor)}`)
+
+
+8)
