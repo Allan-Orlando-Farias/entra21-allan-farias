@@ -66,6 +66,7 @@ let numero = +prompt("Digite um número")
 let linha = 0
 let coluna = 0
 
+externo:                                        // LABEL
 for (let i = 0; i < 3; i++) {
     matriz[i] = []
     for (let j = 0; j < 3; j++) {
@@ -75,6 +76,7 @@ for (let i = 0; i < 3; i++) {
             numero = true
             linha = i
             coluna = j
+            break externo
         }
     }
 }
@@ -172,6 +174,31 @@ console.log(mostrandoMatriz)
 soma += matriz[0][1] + matriz[0][2] + matriz[1][2]
 console.log(soma)
 
+// COREÇÃO
+let matriz = [],
+    somaAcimaDiagonal = 0
+
+for (let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 3; j++) {
+        matriz[i][j] = +prompt(`Digite o valor da ${i + 1}a linha na ${j + 1} coluna`)                    
+        
+        if (j > i) somaAcimaDiagonal += matriz[i][j]
+    }                
+}
+
+mostrarMatriz = ""
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        mostrarMatriz += matriz[i][j] + "\t"
+    }
+    mostrarMatriz += "\n"
+}
+
+console.log(mostrarMatriz)
+console.log(`A soma dos elementos acima da diagona principal é: ${somaAcimaDiagonal}`)
+}
+
 6)
 let matriz = []
 let nota = 0
@@ -194,4 +221,38 @@ for (let i = 0; i < 3; i++) {
 
 console.log(mostrandoMatriz)
 
+// COREÇÃO
+let matriz = []
+for (let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 4; j++) {
+        if (j === 0) {
+            matriz[i][j] = prompt(`Digite o nome do ${i + 1} aluno`)
+        } else {
+            matriz[i][j] = +prompt(`Digite a nota do ${i + 1}o aluno`)
+        }                    
+    }
+}
 
+for (let i = 0; i < 3; i++) {                
+    let acumuladorNotas = 0
+    for (let j = 1; j < 4; j++) {
+        acumuladorNotas += matriz[i][j]
+    }
+
+    let media = acumuladorNotas / 3
+    matriz[i].push(media)
+
+    media >= 6 ? matriz[i].push("Aprovado") : matriz[i].push("Reprovado")
+}
+
+let mostrarMatriz = ""
+for (let i = 0, tamanhoLinhaMatriz = matriz.length; i < tamanhoLinhaMatriz; i++) {
+    for (let j = 0, tamanhoColunaMatriz = matriz[i].length; j < tamanhoColunaMatriz; j++) {
+        mostrarMatriz += matriz[i][j] + "\t"
+    }
+    mostrarMatriz += "\n"
+}
+
+console.log(mostrarMatriz)
+}
