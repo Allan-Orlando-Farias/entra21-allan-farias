@@ -18,7 +18,8 @@ console.log(`O número ${minimo(a, b)} é o menor entre ${a} e ${b}`)
 
 
 3)
-function potencial(a, b) {
+"use strict"
+function potenciacao(a, b) {
     return a ** b
 }
 
@@ -41,6 +42,7 @@ console.log(`A média das notas ${a}, ${b}, ${c} é ${media(a, b, c)}`)
 
 
 5)
+"use strict"
 function conceitoMedia(media) {
     if (media < 4.9) {
         return "D"
@@ -78,6 +80,7 @@ function ultimoNumero(vetor) {
 function primeiroNumero(vetor) {
     return vetor[0]
 }
+
 for (let i = 0; i < 10; i++) {
     vetor[i] = Math.floor(Math.random() * 10 + 1)
 }
