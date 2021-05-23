@@ -89,3 +89,17 @@ console.log(`O seu vetor é [${vetor}] o seu primeiro número é ${primeiroNumer
 
 
 8)
+"use strict"
+let simbolo = ""
+
+function paraString(numero) {
+    for (let i = 0; i < numero; i++) simbolo += "#"
+    return simbolo;
+}
+
+let numero = +prompt("Informe um número:")
+
+console.log(`${paraString(numero)}`)
+
+
+9)
