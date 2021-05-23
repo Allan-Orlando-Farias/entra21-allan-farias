@@ -90,7 +90,6 @@ console.log(`O seu vetor é [${vetor}] o seu primeiro número é ${primeiroNumer
 
 8)
 "use strict"
-<<<<<<< HEAD
 let simbolo = ""
 
 function paraString(numero) {
@@ -101,17 +100,6 @@ function paraString(numero) {
 let numero = +prompt("Informe um número:")
 
 console.log(`${paraString(numero)}`)
-
-
-9)
-=======
-let numero = +prompt("Digite um número")
-
-function mostraSimbolo() {
-    console.log("#".repeat(numero))
-}
-
-mostraSimbolo()
 
 
 9)
@@ -228,4 +216,3 @@ numeroPerfeito(numero) === numero ? console.log(`É um valor perfeito? ${true}`)
 
 
 17)
->>>>>>> 54ccd8cc7da560751fc0669019b179e6a65613f8
