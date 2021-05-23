@@ -90,6 +90,7 @@ console.log(`O seu vetor é [${vetor}] o seu primeiro número é ${primeiroNumer
 
 8)
 "use strict"
+<<<<<<< HEAD
 let simbolo = ""
 
 function paraString(numero) {
@@ -103,3 +104,128 @@ console.log(`${paraString(numero)}`)
 
 
 9)
+=======
+let numero = +prompt("Digite um número")
+
+function mostraSimbolo() {
+    console.log("#".repeat(numero))
+}
+
+mostraSimbolo()
+
+
+9)
+"use strict"
+let variavel = prompt("Digite o que será repetido")
+let numero = +prompt("Digite a a repetição")
+
+function mostraSimbolo() {
+    console.log(`${variavel}\t`.repeat(numero))
+}
+
+mostraSimbolo()
+
+
+10)
+"use strict"
+const anoAtual = 2021
+let anoNascimento = +prompt("Diigte o ano em que você nasceu")
+
+let idade = (anoNascimento) => idade = anoAtual - anoNascimento
+
+console.log(idade(anoNascimento))
+
+
+11)
+"use strict"
+let vetor1 = []
+
+let vetorAleatorio = (vetor1) => {
+    for (let i = 0; i < 5; i++) vetor1.push(Math.floor(Math.random() * 10 + 1))
+    return vetor1
+}
+
+let vetor2 = vetor1
+
+let vetorModificado = (vetor2) => {
+    vetor2[1] = 10
+    vetor2[2] = 30
+    return vetor2
+}
+
+console.log(vetorAleatorio(vetor1))
+console.log(vetorModificado(vetor2))
+
+
+12)
+"use strict"
+let vetor = []
+let maior = 0
+
+let vetorAleatorio = (vetor) => {
+    for (let i = 0; i < 50; i++) vetor.push(Math.floor(Math.random() * 1000 + 1))
+    return vetor
+}
+
+let maiorNumero = (vetor) => {
+    for (let i = 0; i < 50; i++) if (vetor[i] > maior) maior = vetor[i]
+    return maior
+}
+
+let menorNumero = (vetor) => Math.min.apply(Math, vetor)
+
+console.log(vetorAleatorio(vetor))
+console.log(menorNumero(vetor))
+console.log(maiorNumero(vetor))
+
+13)
+"use strict"
+let idadeAnos = +prompt("Digite a sua idade em anos"),
+    idadeMeses = +prompt("Digite a sua idade em meses"),
+    idadeDias = +prompt("Digite a sua idade em dias")
+
+let idadeAnosDias = (idadeAnos) => idadeAnos * 365
+let idadeMesesDias = (idadeMeses) => idadeMeses * 30
+let idade = (idadeDias) => idadeAnosDias(idadeAnos) + idadeMesesDias(idadeMeses) + idadeDias
+
+console.log(idade(idadeDias))
+
+
+14)
+"use strict"
+let cont = 0,
+    numero  =+prompt("Digite um número")
+
+let divisoresNumero = (numero) => {
+    for (let i = 0; i < numero; i++) if (numero % i === 0) cont++
+    return cont
+}
+
+console.log(divisoresNumero(numero))
+
+
+15)
+"use strict"
+let numero = +prompt("Digite um número"),
+    n = numero
+
+let fatorial = (numero) => {for (let i = numero -1; i > 0; i--) n *= i
+    return n
+}
+
+console.log(fatorial(numero))
+
+16)
+"use strict"
+let numero = +prompt("Digite um numero"),
+    soma = 0
+
+let numeroPerfeito = (numero) => {
+    for (let i = 0; i < numero; i++) if (numero % i === 0) soma += i
+    return soma
+}
+numeroPerfeito(numero) === numero ? console.log(`É um valor perfeito? ${true}`) : console.log(`É um valor perfeito? ${false}`)
+
+
+17)
+>>>>>>> 54ccd8cc7da560751fc0669019b179e6a65613f8
