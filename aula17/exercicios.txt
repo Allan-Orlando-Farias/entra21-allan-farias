@@ -216,3 +216,109 @@ numeroPerfeito(numero) === numero ? console.log(`É um valor perfeito? ${true}`)
 
 
 17)
+"use strict"
+let vetor = []
+let vetorInverso = []
+
+function recebendoValor(){
+    for (let i = 0; i < 50; i++){
+        vetor.push(Math.floor(Math.random() * 50 + 1))
+    }
+    console.log(`Antes da ordenação: ${vetor}`)
+}
+recebendoValor()
+
+function ordenandoVetor() {
+    vetorInverso.push(vetor.sort(function(a, b) {return b - a}))
+    console.log(`Depois da ordenação: ${vetorInverso}`)
+}
+ordenandoVetor()
+
+
+18)
+"use strict"
+let xPositivo = 0
+let xNegativo = 0
+let delta = 0
+let a = +prompt("Digite o valor de A"),
+    b = +prompt("Digite o valor de B"),
+    c = +prompt("Digite o valor de C")
+
+function calculandoDelta() {
+    delta = (b ** 2 ) - (4 * a * c)
+    console.log(`O valor de delta é: ${delta}`)
+}
+calculandoDelta()
+
+function deltaNegativo() {
+    if (delta < 0) {
+    console.log(`Não possui raíz real`)
+    }
+}
+deltaNegativo()
+
+function deltaIgualZero() {
+    if (delta == 0) {
+        xPositivo = - (b) + delta
+        console.log(`O valor de x¹ e x² é ${xPositivo}`)
+    }
+}
+deltaIgualZero()
+
+function deltaPositivo() {
+    if (delta > 0) {
+        xNegativo = (- (b) - delta) / 2 * a
+        xPositivo = (- (b) + delta) / 2 * a
+        console.log(`O valor de x¹ ${xPositivo} e x² ${xNegativo}`)
+    }
+}
+deltaPositivo()
+
+
+19)
+"use strict"
+let vetor = []
+let vetorPar = []
+
+function recebendoVetor() {
+    for (let i = 0; i < 10; i ++) {
+        vetor.push(Math.floor(Math.random() * 10 + 1))
+    }
+    console.log(vetor)
+}
+recebendoVetor()
+
+function vetorParIndicePar() {
+    for (let i = 0; i < 10; i++) {
+        if (vetor[i] % 2 === 0 && i % 2 === 0){
+            vetorPar.push(vetor[i])
+        }
+    }
+    console.log(vetorPar)
+}
+
+vetorParIndicePar()
+
+
+20)
+"use strict"
+let valor = 0
+
+function numeroAleatorio() {
+    valor = Math.floor(Math.random() * 10 + 1)
+}
+numeroAleatorio()
+
+let numero = +prompt("Digite um número de 1 a 10")
+    
+function verificandoNumero() {
+    if (numero === valor) {
+        console.log(`Parabéns! O número sorteado foi o ${valor}`)
+    } else {
+        console.log(`Que pena! O número sorteado foi o ${valor}`)
+    }
+}
+verificandoNumero()
+
+
+21)

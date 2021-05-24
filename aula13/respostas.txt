@@ -60,8 +60,7 @@ let vetor = [],
 
 for (let i = 0; i < 5; i++) {
     vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)    
-    vetorInverso.unshift(vetor[i
-    ])
+    vetorInverso.unshift(vetor[i])
 }
 
 console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
