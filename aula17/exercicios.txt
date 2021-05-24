@@ -322,3 +322,16 @@ verificandoNumero()
 
 
 21)
+"use strict"
+let bissexto = true
+let numero = +prompt("Digite um ano")
+
+function verificandoAno() {
+    if (numero % 4 == 0 && numero % 100 != 0 || numero % 400 == 0) {
+        bissexto = true
+    } else {
+        bissexto = false
+    }
+    console.log(bissexto)
+}
+verificandoAno()
