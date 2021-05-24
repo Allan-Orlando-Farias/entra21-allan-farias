@@ -26,7 +26,7 @@ function potenciacao(a, b) {
 let a = +prompt("Digite o valor de A"),
     b = +prompt("Digite o valor de B")
 
-console.log(`O número ${a} elevado a ${b} é ${potencial(a, b)}`)
+console.log(`O número ${a} elevado a ${b} é ${potenciacao(a, b)}`)
 
 
 4)
