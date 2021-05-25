@@ -107,11 +107,14 @@ console.log(`${paraString(numero)}`)
 let variavel = prompt("Digite o que será repetido")
 let numero = +prompt("Digite a a repetição")
 
-function mostraSimbolo() {
-    console.log(`${variavel}\t`.repeat(numero))
+function mostraSimbolo(elemento, quantidade) {
+    let resultado = []
+    for (let i = 0, i < quantidade; i++) {
+        return[i] += elemento
+    }
 }
 
-mostraSimbolo()
+console.log(mostraSimbolo(elemento, variavel))
 
 
 10)
