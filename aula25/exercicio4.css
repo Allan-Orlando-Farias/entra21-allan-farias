@@ -1,0 +1,26 @@
+caption {
+    background-color: rgb(47, 248, 148);
+    font-size: 24px;
+}
+caption, table, th, td {    
+    left: 90px;
+    border: 2px groove white;
+}
+
+thead {
+    background-color: rgb(201, 201, 201);
+}
+
+.nacionais {
+    background-color: rgb(4, 127, 136);
+    font-weight: bold;
+    text-align: center;
+}
+
+.valor {
+    text-align: right;
+}
+
+.tempo {
+    text-align: center;
+}
