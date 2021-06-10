@@ -1,3 +1,153 @@
+body {
+    font-family: "Source Sans Pro", "Helvetica", "sans-serif";
+    font-size: 18px;
+    background-color: #935D8C;
+}
+
+.active {
+    background-color: #FFFFFF;
+    color: #636363;
+}
+
+#nav ul li {
+    margin: 0 auto;
+    padding: 0;
+    display: inline;
+}
+
+#nav ul li a {
+    color: #636363;
+    padding: 20px;
+    display: inline;
+}
+
+h1 {
+    color: #FFFFFF;
+    font: 60px "Source Sans Pro";
+    margin: 0px 0px 15px
+}
+
+h2 {
+    color: #636363;
+    font: 37.3333px "Source Sans Pro";
+    margin: 0px 0px 26.1333px;
+}
+
+p {
+    color: black;
+    font: 23px "Source Sans Pro";
+    margin: 0px 0px px
+}
+
+div.p {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro";
+    margin: 0px 0px 37.3333px;
+}
+
 ul {
+    width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
+    height:100%;        /* aqui foi feito pra fins de demonstração apenas.                     */
     list-style-type: none;
+    font: 18.6667px "Source Sans Pro";
+}
+
+p > a {
+    text-decoration: none;
+    font: 18px "Source Sans Pro";
+    color: black;
+}
+
+li > a {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    margin-left: 39%;
+    margin-right: 40%;
+    text-align: center;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button {
+    padding: 0px 28px;
+}
+
+header.alt {
+    background-color: #935D8C;
+    margin-right: -10%;
+    margin-left: -10%;
+    margin-top: -13%;
+    font: 18.6667px "Source Sans Pro";
+    padding: 130.667px 93.3333px 74.6667px;
+    text-align: center;
+}
+
+#nav {
+    color: black;
+    background-color: #F7F7F7;
+    font: 18.6667px "Source Sans Pro";
+    padding: 18.6667px;
+}
+
+.actions {
+    margin: 0px 0px 37px - 18px;
+}
+
+.copyright {
+    color: #FFFFFFA6;
+    font: 14.9333px "Source Sans Pro";
+    margin: 37.3333px 0px 29.8667px;
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+    margin-right: 10%;
+    margin-left:10%;
+    color: black;
+    font: 18px "Source Sans Pro";
+    padding: 130px 93px 74px;
+    text-align: center;
+}
+
+#intro.main {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro";
+    padding: 93.3333px 93.3333px 56px
+}
+
+.spotlight {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro";
+    margin: 0px 0px 37.3333px;
+}
+
+.content {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro";
+}
+
+#footer {
+    color: #FFFFFFA6;
+    font: 18.6667px "Source Sans Pro";
+    padding: 93.3333px 93.3333px 56px;
+    background-color: #935D8C;
+    margin-bottom: -8%;
+    margin-left: -10%;
+    margin-right: -20%;
 }
