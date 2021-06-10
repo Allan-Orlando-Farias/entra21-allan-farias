@@ -1,0 +1,19 @@
+table, caption, tr {
+    border-collapse: collapse;
+    border: 1px solid white;
+    width: 400px;
+    height: auto;
+}
+
+caption {
+    color: white;
+    background-color: #098575;
+}
+.subtitulo {
+    background-color: #74bbb2;
+}
+
+.p {
+    background-color: #b4dfd9;
+    text-align: center;
+}
