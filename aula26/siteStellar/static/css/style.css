@@ -1,6 +1,6 @@
-body.is-preload {
-    color: #FFFFFFA6;
+body {
     font-family: "Source Sans Pro", "Helvetica", "sans-serif";
+    font-size: 18px;
     background-color: #935D8C;
 }
 
@@ -15,36 +15,10 @@ body.is-preload {
     display: inline;
 }
 
-#header.alt > p {
-    color: white;
-    font: 23.3333px "Source Sans Pro";
-    margin: 0px 0px 46.6667px;
-}
-
-#header.alt > h1 {
-    color: #FFFFFF;
-    font: 60.6667px "Source Sans Pro";
-    margin: 0px 0px 15.1667px;
-}
-
-span.logo {
-    margin: 0px 0px 28px;
-    
-}
-
-img {
-    margin: 0px 461.513px 0px 461.5px;
-}
-
 #nav ul li a {
     color: #636363;
     padding: 20px;
     display: inline;
-}
-
-#header.alt > p > a {
-    color: #FFFFFFA6;
-    font: 23.3333px "Source Sans Pro";
 }
 
 h1 {
@@ -101,11 +75,17 @@ li {
 }
 
 .button {
+    border: 1px solid black;
+    border-radius: 10px;
     margin: auto;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+.button {
+    padding: 0px 28px;
 }
 
 header.alt {
@@ -115,10 +95,11 @@ header.alt {
     margin-top: -13%;
     font: 18.6667px "Source Sans Pro";
     padding: 130.667px 93.3333px 74.6667px;
+    text-align: center;
 }
 
 #nav {
-    color: #636363;
+    color: black;
     background-color: #F7F7F7;
     font: 18.6667px "Source Sans Pro";
     padding: 18.6667px;
