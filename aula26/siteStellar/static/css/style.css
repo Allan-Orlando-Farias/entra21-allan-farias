@@ -1,4 +1,5 @@
-body {
+body.is-preload {
+    opacity: 1;
     font-family: "Source Sans Pro", "Helvetica", "sans-serif";
     font-size: 18px;
     background-color: #935D8C;
@@ -9,13 +10,13 @@ body {
     color: #636363;
 }
 
-#nav ul li {
+#nav > ul > li {
     margin: 0 auto;
     padding: 0;
     display: inline;
 }
 
-#nav ul li a {
+#nav > ul > li > a {
     color: #636363;
     padding: 20px;
     display: inline;
@@ -24,7 +25,7 @@ body {
 h1 {
     color: #FFFFFF;
     font: 60px "Source Sans Pro";
-    margin: 0px 0px 15px
+    margin: 0px 0px 15px;
 }
 
 h2 {
@@ -33,10 +34,9 @@ h2 {
     margin: 0px 0px 26.1333px;
 }
 
-p {
-    color: black;
-    font: 23px "Source Sans Pro";
-    margin: 0px 0px px
+section#first > p {
+    color: #636363;
+    font: 18px "Source Sans Pro";
 }
 
 div.p {
@@ -46,22 +46,20 @@ div.p {
 }
 
 ul {
-    width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
-    height:100%;        /* aqui foi feito pra fins de demonstração apenas.                     */
     list-style-type: none;
     font: 18.6667px "Source Sans Pro";
 }
 
 p > a {
+    border-bottom: dotted 1px #FFFFFF;
     text-decoration: none;
     font: 18px "Source Sans Pro";
-    color: black;
+    color: #FFFFFFA6;
 }
 
 li > a {
     border: 1px solid black;
     border-radius: 10px;
-    margin: auto;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -69,15 +67,12 @@ li > a {
 }
 
 li {
-    margin-left: 39%;
-    margin-right: 40%;
     text-align: center;
 }
 
 .button {
     border: 1px solid black;
     border-radius: 10px;
-    margin: auto;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -90,15 +85,26 @@ li {
 
 header.alt {
     background-color: #935D8C;
-    margin-right: -10%;
-    margin-left: -10%;
-    margin-top: -13%;
     font: 18.6667px "Source Sans Pro";
     padding: 130.667px 93.3333px 74.6667px;
     text-align: center;
 }
 
+#header.alt > p {
+    color: #FFFFFFA6;
+    margin: 0px 0px 46.6667px;
+    font: 23.3333px "Source Sans Pro";
+}
+
+#header.alt > p > a {
+    color: #FFFFFFA6;
+    font: 23.3333px "Source Sans Pro";
+}
+
 #nav {
+    margin: 90px;
+    width: 78%;
+	border-radius: 5px;
     color: black;
     background-color: #F7F7F7;
     font: 18.6667px "Source Sans Pro";
@@ -122,19 +128,36 @@ header.alt {
     color: black;
     font: 18px "Source Sans Pro";
     padding: 130px 93px 74px;
-    text-align: center;
 }
 
 #intro.main {
+	border-radius: 40px;
     color: #636363;
     font: 18.6667px "Source Sans Pro";
-    padding: 93.3333px 93.3333px 56px
+    padding: 93.3333px 93.3333px 56px;
+    margin-top: -18px;
+}
+
+div.spotlight > div.content {
+    width: 50%
+}
+
+div#main {
+    margin: 10%;
+    width: 78%;
+	height: auto;
+	border-radius: 5px;
+    background-color: #F7F7F7;
 }
 
 .spotlight {
     color: #636363;
     font: 18.6667px "Source Sans Pro";
     margin: 0px 0px 37.3333px;
+}
+
+#footer {
+    text-align: center;
 }
 
 .content {
