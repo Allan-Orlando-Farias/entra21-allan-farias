@@ -1,176 +1,88 @@
-body.is-preload {
-    opacity: 1;
-    font-family: "Source Sans Pro", "Helvetica", "sans-serif";
-    font-size: 18px;
-    background-color: #935D8C;
+body {
+    height: 100hv;
+    background-image: 
+        url(../img/overlay.png), 
+        linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    font-family: "Source Sans Pro", sans-serif;
 }
 
-.active {
-    background-color: #FFFFFF;
-    color: #636363;
-}
-
-#nav > ul > li {
-    margin: 0 auto;
-    padding: 0;
-    display: inline;
-}
-
-#nav > ul > li > a {
-    color: #636363;
-    padding: 20px;
-    display: inline;
-}
-
-h1 {
-    color: #FFFFFF;
-    font: 60px "Source Sans Pro";
-    margin: 0px 0px 15px;
-}
-
-h2 {
-    color: #636363;
-    font: 37.3333px "Source Sans Pro";
-    margin: 0px 0px 26.1333px;
-}
-
-section#first > p {
-    color: #636363;
-    font: 18px "Source Sans Pro";
-}
-
-div.p {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    margin: 0px 0px 37.3333px;
-}
-
-ul {
-    list-style-type: none;
-    font: 18.6667px "Source Sans Pro";
-}
-
-p > a {
-    border-bottom: dotted 1px #FFFFFF;
-    text-decoration: none;
-    font: 18px "Source Sans Pro";
-    color: #FFFFFFA6;
-}
-
-li > a {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-li {
-    text-align: center;
-}
-
-.button {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.button {
-    padding: 0px 28px;
-}
-
-header.alt {
-    background-color: #935D8C;
-    font: 18.6667px "Source Sans Pro";
-    padding: 130.667px 93.3333px 74.6667px;
-    text-align: center;
-}
-
-#header.alt > p {
-    color: #FFFFFFA6;
-    margin: 0px 0px 46.6667px;
-    font: 23.3333px "Source Sans Pro";
-}
-
-#header.alt > p > a {
-    color: #FFFFFFA6;
-    font: 23.3333px "Source Sans Pro";
-}
-
-#nav {
-    margin: 90px;
-    width: 78%;
-	border-radius: 5px;
-    color: black;
-    background-color: #F7F7F7;
-    font: 18.6667px "Source Sans Pro";
-    padding: 18.6667px;
-}
-
-.actions {
-    margin: 0px 0px 37px - 18px;
-}
-
-.copyright {
-    color: #FFFFFFA6;
-    font: 14.9333px "Source Sans Pro";
-    margin: 37.3333px 0px 29.8667px;
+h1, h2, h3, h4, h5, h6, p, a {
+    font-weight: 300;
 }
 
 .wrapper {
-    background-color: #FFFFFF;
-    margin-right: 10%;
-    margin-left:10%;
-    color: black;
-    font: 18px "Source Sans Pro";
-    padding: 130px 93px 74px;
+    width: 95%;
+    margin: auto;
 }
 
-#intro.main {
-	border-radius: 40px;
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    padding: 93.3333px 93.3333px 56px;
-    margin-top: -18px;
-}
-
-div.spotlight > div.content {
-    width: 50%
-}
-
-div#main {
-    margin: 10%;
-    width: 78%;
-	height: auto;
-	border-radius: 5px;
-    background-color: #F7F7F7;
-}
-
-.spotlight {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    margin: 0px 0px 37.3333px;
-}
-
-#footer {
+#header {
+    padding: 96px 64px 48px;
     text-align: center;
 }
 
-.content {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
+#header h1 {
+    color: white;
+    font: 60.6667px "Source Sans Pro", Helvetica, sans-serif;
+    margin: 0px 0px 15.1667px;
 }
 
-#footer {
+#header.alt {
     color: #FFFFFFA6;
-    font: 18.6667px "Source Sans Pro";
-    padding: 93.3333px 93.3333px 56px;
-    background-color: #935D8C;
-    margin-bottom: -8%;
-    margin-left: -10%;
-    margin-right: -20%;
+    font: 18.6667px "Source Sans Pro", Helvetica, sans-serif;
+    padding: 130.667px 93.3333px 74.6667px;
+}
+
+#header p {
+    color: #FFFFFFA6;
+    margin: 0px 0px 46.6667px;
+    font-size: 23.3333px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+#nav {
+    font: 18.6667px "Source Sans Pro", Helvetica, sans-serif;
+    color: #636363;
+    background: #F7F7F7;
+    padding: 18.6667px;
+}
+
+#nav ul {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", Helvetica, sans-serif;
+    display: flex;
+    margin: auto;
+}
+
+#nav li {
+    margin: 0px 6.53333px;
+    list-style: none;
+    align-items: center;
+}
+
+#nav a {
+    color: #636363;
+    border: 1px solid black;
+    font: 18.6667px "Source Sans Pro", Helvetica, sans-serif;
+    background: #F7F7F7;
+    padding: 0px 23.3333px;
+    text-decoration: none;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.link:hover {
+    color: white;
+    border: none;
+}
+
+span.logo {
+    margin: 0px 0px 28px;
+}
+
+img {
+    margin: 0px 461.513px 0px 461.5px;
 }
