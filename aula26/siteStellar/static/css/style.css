@@ -1,153 +1,134 @@
 body {
-    font-family: "Source Sans Pro", "Helvetica", "sans-serif";
-    font-size: 18px;
-    background-color: #935D8C;
+    height: 100vh;  
+    background-image: 
+        url(../img/overlay.png),
+        linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    font-family: "Source Sans Pro";
+    margin-left: 226.172px;
+    margin-right: 226.172px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    line-height: 1.65;
 }
 
-.active {
+#main {
     background-color: #FFFFFF;
-    color: #636363;
 }
 
-#nav ul li {
-    margin: 0 auto;
-    padding: 0;
-    display: inline;
-}
-
-#nav ul li a {
-    color: #636363;
-    padding: 20px;
-    display: inline;
-}
-
-h1 {
+#header h1 {
     color: #FFFFFF;
-    font: 60px "Source Sans Pro";
-    margin: 0px 0px 15px
 }
 
-h2 {
-    color: #636363;
-    font: 37.3333px "Source Sans Pro";
-    margin: 0px 0px 26.1333px;
+#header {
+    padding: 96px 64px 48px;
+    text-align: center;
 }
 
-p {
-    color: black;
-    font: 23px "Source Sans Pro";
-    margin: 0px 0px px
+#first.main.special {
+    border-top: 0.1px solid #636363;
+    border-bottom: 1px solid #636363;
 }
 
-div.p {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    margin: 0px 0px 37.3333px;
+#header h1 {
+    font: 73.6667px "Source Sans Pro";
+    margin-top: 0px;
+    margin-bottom: 18.417px;
 }
 
-ul {
-    width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
-    height:100%;        /* aqui foi feito pra fins de demonstração apenas.                     */
-    list-style-type: none;
-    font: 18.6667px "Source Sans Pro";
+span.logo {
+    margin-bottom: 34vh;
 }
 
-p > a {
+#header p {
+    color: #FFFFFFA6;
+    font: 28.3333px "Source Sans Pro";
+    margin-top: 0px;
+    margin-bottom: 56.6667px;
+}
+
+.link {
+    color: #FFFFFFA6;
     text-decoration: none;
-    font: 18px "Source Sans Pro";
-    color: black;
+    border-bottom: 1px dotted;
 }
 
-li > a {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: auto;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-li {
-    margin-left: 39%;
-    margin-right: 40%;
-    text-align: center;
-}
-
-.button {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: auto;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.button {
-    padding: 0px 28px;
-}
-
-header.alt {
-    background-color: #935D8C;
-    margin-right: -10%;
-    margin-left: -10%;
-    margin-top: -13%;
-    font: 18.6667px "Source Sans Pro";
-    padding: 130.667px 93.3333px 74.6667px;
-    text-align: center;
+.link:hover {
+    color: #FFFFFF;
+    border-bottom: none;
 }
 
 #nav {
-    color: black;
     background-color: #F7F7F7;
-    font: 18.6667px "Source Sans Pro";
-    padding: 18.6667px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 5px solid #F7F7F7;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro";
+    padding: 22.6667px;
 }
 
-.actions {
-    margin: 0px 0px 37px - 18px;
+#nav ul {
+    display: flex;
+    align-items: space-around;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
 }
 
-.copyright {
-    color: #FFFFFFA6;
-    font: 14.9333px "Source Sans Pro";
-    margin: 37.3333px 0px 29.8667px;
+#nav li {
+    margin: 0px 7.93333px;
+    list-style: none;
+    flex-direction: row;
 }
 
-.wrapper {
-    background-color: #FFFFFF;
-    margin-right: 10%;
-    margin-left:10%;
-    color: black;
-    font: 18px "Source Sans Pro";
-    padding: 130px 93px 74px;
-    text-align: center;
+#nav a {
+    text-decoration: none;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro";
+    padding: 0px 28.3333px;
+}
+
+div.spotligth {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro";
+    margin-bottom: 45.3333px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #intro.main {
     color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    padding: 93.3333px 93.3333px 56px
-}
-
-.spotlight {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
-    margin: 0px 0px 37.3333px;
+    font: 22.6667px "Source Sans Pro";
+    padding: 113.333px 113.333px 68px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-areas: 
+        "a a b"
+        "a a b";
+    grid-auto-rows: minmax(100px, auto);;
 }
 
 .content {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro";
+    grid-area: a;
 }
 
-#footer {
-    color: #FFFFFFA6;
-    font: 18.6667px "Source Sans Pro";
-    padding: 93.3333px 93.3333px 56px;
-    background-color: #935D8C;
-    margin-bottom: -8%;
-    margin-left: -10%;
-    margin-right: -20%;
+div img {
+    display: inline-block;
+    margin: 0px 0px 0px 90.667px;
+    padding: 14.7333px;
+    grid-area: main;
+}
+
+li {
+    list-style: none;
+}
+
+a.button {
+    border: 1px solid black;
+    text-decoration: none;
+    color: #636363;
+}
+
+.actions ul li {
+    padding: 0px 0px 0px 22.6667;
 }
