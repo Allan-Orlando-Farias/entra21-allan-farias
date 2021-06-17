@@ -91,3 +91,49 @@ ul.actions {
 .button {
     padding: 0px 34px;
 }
+
+.features {
+    padding: 0px;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 68px -45.3333px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.features li {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 0px 45.3333px;
+}
+
+.icon.solid.major.style1.fa-code, .icon.major.style3.fa-copy, .icon.major.style5.fa-gem {
+    margin: 0px 0px 45.3333px;
+    padding: 14.7333px;
+}
+
+.features h3 {
+    color: #636363;
+    font: 28.3333px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 19.8333px;
+}
+
+
+#first.main.special {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    padding: 113.333px 113.333px 68px;
+}
+
+.major h2 {
+    color: #636363;
+    font: 45.3333px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 31.7333px;
+    text-align: center;
+}
+
+.features p {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+}

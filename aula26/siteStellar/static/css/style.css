@@ -6,7 +6,7 @@ body {
     font-family: "Source Sans Pro";
     margin-left: 226.172px;
     margin-right: 226.172px;
-    background-attachment: fixed;
+    height: 100%;
     background-repeat: no-repeat;
     line-height: 1.65;
 }
@@ -22,6 +22,24 @@ span.logo {
 
 .logo img {
     margin: 0px 569.5px;
+    padding: 0px;
+}
+
+.image {
+    margin: 0px 0px 0px 90.6667px;
+    padding: 14.7333px;
+}
+
+.image {
+    margin: 0px;
+    margin-left: 90.667px;
+    padding: 14.733px;
+    border: 1;
+    position: 0;
+}
+
+.image img {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -46,7 +64,13 @@ span.logo {
     margin-bottom: 45.3333px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0px 2px;
+}
 
+.content p {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 45.3333px;
 }
 
 li {
@@ -57,8 +81,73 @@ a.button {
     border: 1px solid black;
     text-decoration: none;
     color: #636363;
+    padding: 0px 34px;
 }
 
 .actions ul li {
     padding: 0px 0px 0px 22.6667;
+}
+
+#second.main.special {
+    margin: 0px;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    padding: 113.333px 113.333px 68px;
+}
+
+#second.main.special h2 {
+    font-size: 45.3333px;
+    margin: 0px 0px 31.7333px;
+}
+
+#second.main.special p {
+    font-size: 28.3333px;
+    margin: 0px 0px 56.6667px;
+}
+
+header.major {
+    margin: 0px 0px 68px;
+}
+
+ul.statistics {
+    display: flex;
+    
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 68px;
+}
+
+li.style1 {
+    color: #FFFFFF;
+    background-color: #EFA8B0;
+    padding: 34px;
+}
+
+strong {
+    color: #FFFFFF;
+    font: 45.3333px "Source Sans Pro", sans-serif;
+}
+
+li.style2 {
+    color: #FFFFFF;
+    background-color: #C79CC8;
+    padding: 34px;
+}
+
+li.style3 {
+    color: #FFFFFF;
+    background-color: #A89CC8;
+    padding: 34px;
+}
+
+li.style4 {
+    color: #FFFFFF;
+    background-color: #9BB2E1;
+    padding: 34px;
+}
+
+li.style5 {
+    color: #FFFFFF;
+    background-color: #8CC9F0;
+    padding: 34px;
 }
