@@ -11,68 +11,23 @@ body {
     line-height: 1.65;
 }
 
-#main {
-    background-color: #FFFFFF;
-}
-
-#header h1 {
-    color: #FFFFFF;
-}
-
-#header {
-    padding: 96px 64px 48px;
-    text-align: center;
-}
-
 #first.main.special {
     border-top: 0.1px solid #636363;
     border-bottom: 1px solid #636363;
-}
-
-#header h1 {
-    font: 73.6667px "Source Sans Pro";
-    margin-top: 0px;
-    margin-bottom: 18.417px;
 }
 
 span.logo {
     margin-bottom: 34vh;
 }
 
-#header p {
-    color: #FFFFFFA6;
-    font: 28.3333px "Source Sans Pro";
-    margin-top: 0px;
-    margin-bottom: 56.6667px;
-}
-
-.link {
-    color: #FFFFFFA6;
-    text-decoration: none;
-    border-bottom: 1px dotted;
+.logo img {
+    margin: 0px 569.5px;
+    padding: 0px;
 }
 
 .link:hover {
     color: #FFFFFF;
     border-bottom: none;
-}
-
-#nav {
-    background-color: #F7F7F7;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 5px solid #F7F7F7;
-    color: #636363;
-    font: 22.6667px "Source Sans Pro";
-    padding: 22.6667px;
-}
-
-#nav ul {
-    display: flex;
-    align-items: space-around;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
 }
 
 #nav li {
@@ -81,42 +36,17 @@ span.logo {
     flex-direction: row;
 }
 
-#nav a {
-    text-decoration: none;
-    color: #636363;
-    font: 22.6667px "Source Sans Pro";
-    padding: 0px 28.3333px;
+#nav a:hover {
+    background-color: #f3f2f2;
 }
 
-div.spotligth {
+.spotlight {
     color: #636363;
     font: 22.6667px "Source Sans Pro";
     margin-bottom: 45.3333px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-#intro.main {
-    color: #636363;
-    font: 22.6667px "Source Sans Pro";
-    padding: 113.333px 113.333px 68px;
-    background-color: #FFFFFF;
     display: grid;
-    grid-template-areas: 
-        "a a b"
-        "a a b";
-    grid-auto-rows: minmax(100px, auto);;
-}
+    grid-template-columns: 1fr 1fr;
 
-.content {
-    grid-area: a;
-}
-
-div img {
-    display: inline-block;
-    margin: 0px 0px 0px 90.667px;
-    padding: 14.7333px;
-    grid-area: main;
 }
 
 li {

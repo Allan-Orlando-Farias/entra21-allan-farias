@@ -1,0 +1,93 @@
+#main {
+    background-color: #FFFFFF;
+}
+
+#header {
+    padding: 96px 64px 48px;
+    text-align: center;
+}
+
+#header h1 {
+    color: #FFFFFF;
+    font: 73.6667px "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 18.417px;
+}
+
+#header p {
+    color: #FFFFFFA6;
+    font: 28.3333px "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 56.6667px;
+}
+
+.link {
+    color: #FFFFFFA6;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+#nav {
+    background-color: #F7F7F7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 5px solid #F7F7F7;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    padding: 22.6667px;
+}
+
+#nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    padding: 0px 28.3333px;
+}
+
+#intro.main {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    padding: 113.333px 113.333px 68px;
+    background-color: #FFFFFF;
+    display: grid;
+}
+
+div.content {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+}
+
+#intro.main h2 {
+    margin: 0px;
+    margin-bottom: 31.7333px;
+    color: #636363;
+    font: 45.3333px "Source Sans Pro", sans-serif;
+}
+
+div img {
+    display: inline-block;
+    margin: 0px 0px 0px 90.667px;
+    padding: 14.7333px;
+}
+
+ul.actions {
+    color: #636363;
+    padding: 0px;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 0px -22.6667px;
+}
+
+.actions li {
+    padding: 0px 0px 0px 22.6667px;
+}
+
+.button {
+    padding: 0px 34px;
+}
