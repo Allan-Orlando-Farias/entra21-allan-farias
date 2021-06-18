@@ -1,0 +1,34 @@
+.logo img {
+    animation-name: logo;
+    animation-duration: 1s;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(-30deg);
+    }
+
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.aparecer {
+    animation-name: aparecer;
+    animation-duration: 5s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
