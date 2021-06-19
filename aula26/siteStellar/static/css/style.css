@@ -1,153 +1,377 @@
+/* CORPO */
 body {
     height: 100vh;  
     background-image: 
         url(../img/overlay.png),
-        linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+        linear-gradient(45deg, #e37562 15%, #5f4d93 85%);
     font-family: "Source Sans Pro";
-    margin-left: 226.172px;
-    margin-right: 226.172px;
+    margin-left: 28vh;
+    margin-right: 28vh;
     height: 100%;
     background-repeat: no-repeat;
     line-height: 1.65;
 }
-
-#first.main.special {
-    border-top: 0.1px solid #636363;
-    border-bottom: 1px solid #636363;
+#main {
+    background-color: #FFFFFF;
 }
 
-span.logo {
-    margin-bottom: 34vh;
-}
 
-.logo img {
-    margin: 0px 569.5px;
-    padding: 0px;
-}
-
-.image {
-    margin: 0px 0px 0px 90.6667px;
-    padding: 14.7333px;
-}
-
-.image {
-    margin: 0px;
-    margin-left: 90.667px;
-    padding: 14.733px;
-    border: 1;
-    position: 0;
-}
-
-.image img {
-    margin: 0px;
-    padding: 0px;
-}
-
-.link:hover {
-    color: #FFFFFF;
-    border-bottom: none;
-}
-
-#nav li {
-    margin: 0px 7.93333px;
-    list-style: none;
-    flex-direction: row;
-}
-
-#nav a:hover {
-    background-color: #f3f2f2;
-}
-
-.spotlight {
-    color: #636363;
-    font: 22.6667px "Source Sans Pro";
-    margin-bottom: 45.3333px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 2px;
-}
-
-.content p {
-    color: #636363;
-    font: 22.6667px "Source Sans Pro", sans-serif;
-    margin: 0px 0px 45.3333px;
-}
-
-li {
-    list-style: none;
-}
-
-a.button {
-    border: 1px solid black;
-    text-decoration: none;
-    color: #636363;
-    padding: 0px 34px;
-}
-
+/* Não sei o que é */
 .actions ul li {
     padding: 0px 0px 0px 22.6667;
 }
+.actions li {
+    padding: 0px 0px 0px 22.6667px;
+}
+.button {
+    padding: 0px 28px;
+}
+.link:hover {
+    border: none;
+    color: #FFFFFF;
+}
 
+
+/* Formatação "universal" */
+    /* Adicionando a linha colorida depois dos h1 */
+    header.major h2::after {
+        display: block;
+        content: '';
+        width: 3.25em;
+        height: 3px;
+        margin-top: 0.7em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2px;
+        background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    }
+    /* Removendo a fortamação de lista */
+    li {
+        list-style: none;
+    }
+    /* Cria a divisão de página */
+    #first.main.special {
+        border-top: 0.1px solid #636363;
+        border-bottom: 1px solid #636363;
+    }
+    #cta.main.special {
+        border-top: 1px solid #636363;
+    }  
+    /* H2 */
+    h2 {
+        margin: 0px;
+        margin-bottom: 26.1333px;
+        color: #636363;
+        font: 37.3333px "Source Sans Pro", sans-serif;
+        text-align: center;
+    }
+    /* P */
+    p {
+        color: #636363;
+        font: 23.3333px "Source Sans Pro", sans-serif;
+        margin: 0px px 46.6667px;
+    }
+    /* links */
+    .link {
+        color: #FFFFFFA6;
+        text-decoration: none;
+        border-bottom: 1px dotted;
+    }
+    /* Botão */
+    a.button {
+        font-size: 18.6667px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: #636363;
+        padding: 10px 40px;
+        border-radius: 10px;
+    }
+
+
+/* Parte da logo/cabeçalho */
+span.logo {
+    margin-bottom: 28vh;
+    margin: 0px 0px 28px;
+}
+.logo img {
+    padding: 0px;
+    margin: 0px 461.513px 0px 461.5px;
+}
+#header.alt {
+    padding: 130.667px 0px 74.6667px;
+    text-align: center;
+}
+#header h1 {
+    color: #FFFFFF;
+    font: 60.6667px "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 15.1667px;
+}
+#header p {
+    color: #FFFFFFA6;
+    font: 23.3333px "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 46.6667px;
+}
+
+
+
+/* Nav */
+#nav {
+    background-color: #F7F7F7;
+    border-radius: 5px 5px 0px 0px;
+    border: 5px solid #F7F7F7;
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    padding: 18.6667px;
+}
+#nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+#nav a {
+    text-decoration: none;
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    padding: 0px 23.3333px;
+}
+#nav a:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* Introdução */
+#intro.main {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    padding: 93.333px 93.333px 56px;
+}
+#intro div.content {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+}
+#intro .spotlight {
+    margin: 0px 0px 37.3333px;
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    display: flex;
+}
+#intro .image {
+    margin: 0px 0px 0px 14.667px;
+    padding: 12.1333px;
+}
+#intro .image img {
+    border: 1px solid #636363;
+    border-radius: 50%;
+}
+#intro .content h2 {
+    text-align: left;
+}
+#intro .content p {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 37.3333px;
+}
+#intro h2::after {
+    display: block;
+    content: '';
+    width: 3.25em;
+    height: 3px;
+    margin: 0.7em 0 1em 0;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+#intro div img {
+    display: inline-block;
+    margin: 0px;
+    padding: 14.7333px;
+}
+
+
+/* Primeira seção */
+#first.main.special {
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    padding: 93.333px 93.333px 56px;
+}
+.features {
+    padding: 0px;
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 56px -37.3333px;
+    display: flex;
+}
+.features li {
+    color: #636363;
+    font: 22.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 0px 45.3333px;
+}
+.features h3 {
+    color: #636363;
+    font: 23.3333px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 16.3333px;
+}
+.features p {
+    margin: 0px;
+    color: #636363;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+}
+.icon.solid.major.style1.fa-code, .icon.major.style3.fa-copy, .icon.major.style5.fa-gem {
+    margin: 0px 0px 37.3333px;
+    padding: 12.1333px;
+}
+
+
+/* Segunda seção */
 #second.main.special {
     margin: 0px;
     color: #636363;
-    font: 22.6667px "Source Sans Pro", sans-serif;
-    padding: 113.333px 113.333px 68px;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    padding: 93.333px 93.333px 56px;
 }
-
-#second.main.special h2 {
-    font-size: 45.3333px;
-    margin: 0px 0px 31.7333px;
-}
-
 #second.main.special p {
-    font-size: 28.3333px;
-    margin: 0px 0px 56.6667px;
+    margin: 0px 0px 46.6667px;
+    font-size: 23.3333px;
+    display: block;
+    text-align: center;
 }
-
-header.major {
-    margin: 0px 0px 68px;
+#second.main.special .content {
+    font-size: 18.6667px;
+    margin: 0px 0px 37.3333px;
 }
-
+ul.actions.special {
+    text-align: center;
+    margin: 0px 0px 37.3333px;
+    padding: 0px;
+}
 ul.statistics {
-    display: flex;
-    
+    display: flex;    
     color: #636363;
-    font: 22.6667px "Source Sans Pro", sans-serif;
-    margin: 0px 0px 68px;
+    margin: 0px 0px 56px;
 }
-
+strong {
+    color: #FFFFFF;
+    font: 37.3333px "Source Sans Pro", sans-serif;
+}
 li.style1 {
     color: #FFFFFF;
     background-color: #EFA8B0;
-    padding: 34px;
+    padding: 28px;
 }
-
-strong {
-    color: #FFFFFF;
-    font: 45.3333px "Source Sans Pro", sans-serif;
-}
-
 li.style2 {
     color: #FFFFFF;
     background-color: #C79CC8;
-    padding: 34px;
+    padding: 28px;
 }
-
 li.style3 {
     color: #FFFFFF;
     background-color: #A89CC8;
-    padding: 34px;
+    padding: 28px;
 }
-
 li.style4 {
     color: #FFFFFF;
     background-color: #9BB2E1;
-    padding: 34px;
+    padding: 28px;
 }
-
 li.style5 {
     color: #FFFFFF;
     background-color: #8CC9F0;
-    padding: 34px;
+    padding: 28px;
+}
+
+
+/* Seção final */
+#cta.main.special {
+    padding: 93.3333px 93.3333px 56px;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+}
+#cta.main.special h2 {
+    font-size: 37.3333px;
+    margin: 0px 0px 26.1333px; 
+}
+#cta.main.special p {
+    font-size: 23.3333px;
+    text-align: center;
+    margin: 0px 0px 46.6667px;
+}
+ul.actions.special {
+    display: flex;
+    font-size: 18.6667px;
+    margin: 0px 0px 37.3333px;
+    justify-content: center;
+}
+a.button.primary {
+    border: none;
+    color: #FFFFFF;
+    font-size: 18.6667px;
+    background-color: #8CC9F0;
+}
+
+
+/* Rodapé */
+#footer {
+    display: flex;
+    color: #FFFFFFA6;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 56px -37.333px;
+    padding: 93.333px 93.333px 56px;    
+}
+#footer h2 {
+    color: #FFFFFF;
+    font: 28px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 19.6px;
+}
+#footer p {
+    margin: 0px 0px 37.3333px;
+    font-size: 18.6667px;
+    color: #FFFFFFA6;
+}
+#footer ul.actions {
+    margin: 0px 0px 37.3333px -18.6667px;
+}
+#footer li {
+    padding: 0px 0px 0px 18.6667px;
+}
+#footer .button {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+#footer section {
+    color: #FFFFFFA6;
+    font: 18.6667px "Source Sans Pro", sans-serif;
+    margin: 0px 0px 0px 37.3333px;
+}
+#footer section h2 {
+    color: #FFFFFF;
+    margin: 0px 0px 19.6px;
+}
+#footer dt {
+    color: #FFFFFF;
+}
+#footer .alt {
+    color: #FFFFFFA6;
+    margin: 0px 0px 37.333px;
+}
+#footer dd {
+    color: #FFFFFFA6;
+    margin: 0px 0px 15.8667px 102.667px;
+}
+#footer a {
+    color: #FFFFFFA6;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+#footer .icons {
+    display: flex;
+}
+#footer li {
+    padding: 0px 12.1333px 0px 0px;
+}
+.icon.brands.fa-twitter.alt, .icon.brands.fa.fa-facebook.alt, .icon.brands.fa-instagram.alt, .icon.brands.fa-github.alt, .icon.brands.fa-dribbble.alt {
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    scale: 20px;
+    border-radius: 50%;
 }
