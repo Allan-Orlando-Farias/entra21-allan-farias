@@ -5,8 +5,8 @@ body {
         url(../img/overlay.png),
         linear-gradient(45deg, #e37562 15%, #5f4d93 85%);
     font-family: "Source Sans Pro";
-    margin-left: 28vh;
-    margin-right: 28vh;
+    margin-left: 22vh;
+    margin-right: 22vh;
     height: 100%;
     background-repeat: no-repeat;
     line-height: 1.65;
@@ -14,17 +14,21 @@ body {
 #main {
     background-color: #FFFFFF;
 }
+/* Medida REM com 16px */
 
 
 /* Não sei o que é */
 .actions ul li {
-    padding: 0px 0px 0px 22.6667;
+    padding: 0px 0px 0px 22.6667px;
+    padding: 0rem 0rem 0rem 1.417rem;
 }
 .actions li {
     padding: 0px 0px 0px 22.6667px;
+    padding: 0rem 0rem 0rem 1.417rem;
 }
 .button {
     padding: 0px 28px;
+    padding: 0rem 1.75rem;
 }
 .link:hover {
     border: none;
@@ -37,12 +41,16 @@ body {
     header.major h2::after {
         display: block;
         content: '';
+        width: 52px;
         width: 3.25em;
         height: 3px;
+        height: 0.188rem;
+        margin-top: 11.2px;
         margin-top: 0.7em;
         margin-left: auto;
         margin-right: auto;
         border-radius: 2px;
+        border-radius: 0.125rem;
         background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
     }
     /* Removendo a fortamação de lista */
@@ -52,24 +60,32 @@ body {
     /* Cria a divisão de página */
     #first.main.special {
         border-top: 0.1px solid #636363;
+        border-top: 0.006rem solid #636363;
         border-bottom: 1px solid #636363;
+        border-bottom: 0.063rem solid #636363;
     }
     #cta.main.special {
         border-top: 1px solid #636363;
+        border-top: 0.063rem solid #636363;
     }  
     /* H2 */
     h2 {
         margin: 0px;
+        margin: 0rem;
         margin-bottom: 26.1333px;
+        margin-bottom: 1.633rem;
         color: #636363;
         font: 37.3333px "Source Sans Pro", sans-serif;
+        font: 2.333rem "Source Sans Pro", sans-serif;
         text-align: center;
     }
     /* P */
     p {
         color: #636363;
         font: 23.3333px "Source Sans Pro", sans-serif;
+        font-size: 1.458rem;
         margin: 0px px 46.6667px;
+        margin: 0rem 0rem 2.917rem;
     }
     /* links */
     .link {
@@ -148,10 +164,6 @@ span.logo {
     font: 18.6667px "Source Sans Pro", sans-serif;
     padding: 93.333px 93.333px 56px;
 }
-#intro div.content {
-    color: #636363;
-    font: 18.6667px "Source Sans Pro", sans-serif;
-}
 #intro .spotlight {
     margin: 0px 0px 37.3333px;
     color: #636363;
@@ -188,6 +200,9 @@ span.logo {
     margin: 0px;
     padding: 14.7333px;
 }
+#intro .actions li, ul{
+  padding: 0px;
+}
 
 
 /* Primeira seção */
@@ -196,31 +211,52 @@ span.logo {
     font: 18.6667px "Source Sans Pro", sans-serif;
     padding: 93.333px 93.333px 56px;
 }
-.features {
+#first .features {
     padding: 0px;
     color: #636363;
     font: 18.6667px "Source Sans Pro", sans-serif;
     margin: 0px 0px 56px -37.3333px;
     display: flex;
 }
-.features li {
+#first .features li {
+    text-align: center;
     color: #636363;
     font: 22.6667px "Source Sans Pro", sans-serif;
     margin: 0px 0px 0px 45.3333px;
 }
-.features h3 {
+#first .features h3 {
     color: #636363;
     font: 23.3333px "Source Sans Pro", sans-serif;
     margin: 0px 0px 16.3333px;
 }
-.features p {
+#first .features p {
     margin: 0px;
     color: #636363;
     font: 18.6667px "Source Sans Pro", sans-serif;
 }
-.icon.solid.major.style1.fa-code, .icon.major.style3.fa-copy, .icon.major.style5.fa-gem {
+#first .icon.solid.major.style1.fa-code {
     margin: 0px 0px 37.3333px;
-    padding: 12.1333px;
+    padding: 60px 50px 60px;
+    font-size: 90px;
+    color: #efa8b0;
+    border: 1px solid #636363;
+    border-radius: 50%;  
+}
+#first .icon.major.style3.fa-copy {
+    color: #A89CC8;
+    margin: 0px 0px 37.3333px;
+    padding: 60px 65px;
+    font-size: 90px;  
+    border: 1px solid #636363;
+    border-radius: 50%;  
+}
+#first .icon.major.style5.fa-gem {
+    color: #8CC9F0;
+    margin: 0px 0px 37.3333px;
+    padding: 60px;
+    font-size: 90px;  
+    border: 1px solid #636363;
+    border-radius: 50%;  
 }
 
 
@@ -239,46 +275,58 @@ span.logo {
 }
 #second.main.special .content {
     font-size: 18.6667px;
+    display: block;
     margin: 0px 0px 37.3333px;
 }
-ul.actions.special {
-    text-align: center;
-    margin: 0px 0px 37.3333px;
-    padding: 0px;
-}
-ul.statistics {
-    display: flex;    
+#second ul.statistics {
+    display: flex;
     color: #636363;
     margin: 0px 0px 56px;
 }
-strong {
+#second strong {
+    display: block;
+    margin: 10px 33px 20px;
     color: #FFFFFF;
     font: 37.3333px "Source Sans Pro", sans-serif;
 }
-li.style1 {
+#second li:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+}
+#second li:nth-child(5) {
+    border-radius: 0px 10px 10px 0px;
+}
+#second li.style1 {
     color: #FFFFFF;
+    text-align: center;
     background-color: #EFA8B0;
     padding: 28px;
 }
-li.style2 {
+#second li.style2 {
     color: #FFFFFF;
+    text-align: center;
     background-color: #C79CC8;
     padding: 28px;
 }
-li.style3 {
+#second li.style3 {
     color: #FFFFFF;
+    text-align: center;
     background-color: #A89CC8;
     padding: 28px;
 }
-li.style4 {
+#second li.style4 {
     color: #FFFFFF;
+    text-align: center;
     background-color: #9BB2E1;
     padding: 28px;
 }
-li.style5 {
+#second li.style5 {
     color: #FFFFFF;
+    text-align: center;
     background-color: #8CC9F0;
     padding: 28px;
+}
+#second .icon.solid.fa-code-branch, .icon.fa-folder-open, .icon.solid.fa-signal, .icon.solid.fa-laptop, .icon.fa-gem {
+    font-size: 40px;
 }
 
 
