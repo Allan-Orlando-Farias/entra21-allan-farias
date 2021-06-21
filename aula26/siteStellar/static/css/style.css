@@ -22,18 +22,6 @@ body {
 
 
 /* Não sei o que é */
-.actions ul li {
-    padding: 0px 0px 0px 22.6667px;
-    padding: 0rem 0rem 0rem 1.417rem;
-}
-.actions li {
-    padding: 0px 0px 0px 22.6667px;
-    padding: 0rem 0rem 0rem 1.417rem;
-}
-.button {
-    padding: 0px 28px;
-    padding: 0rem 1.75rem;
-}
 .link:hover {
     border: none;
     color: #FFFFFF;
@@ -46,15 +34,11 @@ body {
         display: block;
         content: '';
         width: 52px;
-        width: 3.25em;
         height: 3px;
-        height: 0.188rem;
         margin-top: 11.2px;
-        margin-top: 0.7em;
         margin-left: auto;
         margin-right: auto;
         border-radius: 2px;
-        border-radius: 0.125rem;
         background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
     }
     /* Removendo a fortamação de lista */
@@ -64,13 +48,10 @@ body {
     /* Cria a divisão de página */
     #first.main.special {
         border-top: 0.1px solid #636363;
-        border-top: 0.006rem solid #636363;
         border-bottom: 1px solid #636363;
-        border-bottom: 0.063rem solid #636363;
     }
     #cta.main.special {
         border-top: 1px solid #636363;
-        border-top: 0.063rem solid #636363;
     }  
     /* H2 */
     h2 {
@@ -92,6 +73,10 @@ body {
         margin: 0rem 0rem 2.917rem;
     }
     /* links */
+    .link:hover {
+        border: none;
+        color: #FFFFFF;
+    }
     .link {
         color: #FFFFFFA6;
         text-decoration: none;
@@ -123,7 +108,8 @@ span.logo {
 }
 #header h1 {
     color: #FFFFFF;
-    font: 60.6667px "Source Sans Pro", sans-serif;
+    font-size: 2.5rem;
+    font: "Source Sans Pro", sans-serif;
     margin-top: 0px;
     margin-bottom: 15.1667px;
 }
