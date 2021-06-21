@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    margin: 0px 0px 190px 0px;
+}
+div {
+    background-color: lightblue;
+    margin: 190px;
+}
+.nav__list {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav__title {
+    display: block;
+    padding-bottom: 90px;
+}
+.nav__column {
+    border: 2px solid black;
+    border-radius: 25%;
+    padding: 0px 90px 90px;
+}
