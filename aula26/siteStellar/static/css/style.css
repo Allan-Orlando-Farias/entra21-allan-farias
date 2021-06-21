@@ -1,4 +1,7 @@
 /* CORPO */
+html {
+    font-size: 11pt;
+}
 body {
     height: 100vh;  
     background-image: 
