@@ -1,0 +1,96 @@
+html {
+    font-size: 11pt;               /* 16px */
+}
+a {
+    text-decoration: none;         /* Tirando a formatação de link */
+    color: black;                /* Mudando a cor */
+}
+.header__title {
+    text-align: center;            /* Alinhando o texto */
+}
+.header__text {
+    font-size: 20px;               /* Definindo o tamanho da fonte */
+}
+.nav__list {
+    margin-top: 30px;              /* Tamanho da margem de cima*/
+    justify-content: space-evenly; /* Espaçamentos das cidades */
+    display: flex;                 /* Criando um flex */
+    flex-wrap: wrap;               /* Forçando a quebra de linhas */
+    padding: 0px;                  /* Tirando o padding */
+}
+.nav__column {
+    margin: 10px;                                                                        /* Definindo a margem */
+    font-size: 18px;                                                                     /* Tamanho de fonte */
+    text-align: center;                                                                  /* Alinhando o texto */
+    background-image: linear-gradient(rgb(211, 209, 209) 15%, rgb(29, 29, 29) 100%); /* Colocando uma cor no background das li*/
+    border-radius: 10%;                                                                  /* Deixando com ar bordar redondas */
+    list-style: none;                                                                    /* Tirando o estilo de lista */
+}
+.nav__img {
+    display: block;                /* Mudando a imagem para bloco */
+    padding: 0px 10px;             /* Adicionando o padding */
+    border-radius: 15%;            /* Deixando a borda mais redonda */
+    width: 120px;                  /* Mudando o tamanho da img */
+    height: 80px;                  /* Mudando o tamanho da img */
+}
+.rodape {
+    margin-top: 30px;              /* Adicionando a margem de cima */
+}
+@media screen and (min-width: 480px) {
+    .nav__list {
+        padding: 11px;             /* Adicionando o padding */
+    }
+    .nav__column {
+        margin-bottom: 20px;       /* Adicionando a margem de baixo */
+        margin-right: 32px;        /* Adicionando a margem da direita */
+    }
+    .nav__img {
+        padding: 30px;             /* Adicionando o padding */
+        width: 120px;              /* Aumentando o tamanho da img */
+        height: auto;              /* Aumentando o tamanho da img */
+    }
+}
+@media screen and (min-width: 735px) {
+    .nav__list {
+        margin: 40px;             /* Definindo a margem */
+    }
+    .nav__column {
+        margin: 20px 70px;        /* Definindo a margem */
+    }
+    .nav__img {
+        padding: 25px;            /* Definindo o padding */
+        width: 120px;             /* Aumentando o tamanho da img */
+        height: auto;             /* Aumentando o tamanho da img */
+    }
+}
+@media screen and (min-width: 980px) {
+    .nav__list {
+        margin: 80px;             /* Definindo a margem */
+    }
+    .nav__column {
+        margin: 20px 90px;        /* Definindo a margem */
+    }
+    .nav__img {
+        padding: 20px;            /* Definindo o padding */
+        width: 140px;             /* Aumentando a img */
+        height: auto;             /* Aumentando a img */
+    }
+}
+@media screen and (min-width: 1280px) {
+    .nav__list {
+        margin: 120px;            /* Definindo a margem */
+    }
+    .nav__column {
+        margin: 30px 90px;        /* Definindo a margem */
+    }
+    .nav__img {
+        padding: 40px;            /* Definindo o padding */
+        width: 200px;             /* Aumentando o tamanho da img */
+        height: auto;             /* Aumentando o tamanho da img */
+    }
+}
+@media screen and (min-width: 1680px) {
+    html {
+        font-size: 14pt;          /* Mudando o tamanho da fonte */
+    }
+}
