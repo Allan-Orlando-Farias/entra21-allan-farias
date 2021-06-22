@@ -1,23 +1,27 @@
-.header {
+.header__title {
     text-align: center;
-    margin: 0px 0px 190px 0px;
 }
-div {
-    background-color: lightblue;
-    margin: 190px;
+.header__text {
+    font-size: 20px;
 }
 .nav__list {
-    padding: 0px;
-    list-style: none;
+    margin-top: 30px;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: space-around;
-}
-.nav__title {
-    display: block;
-    padding-bottom: 90px;
+    flex-wrap: wrap;
+    padding: 0px;
 }
 .nav__column {
-    border: 2px solid black;
-    border-radius: 25%;
-    padding: 0px 90px 90px;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-image: linear-gradient(rgb(211, 209, 209) 15%, rgb(29, 29, 29) 100%);
+    border-radius: 10%;
+    list-style: none;
+}
+.nav__img {
+    padding: 0px 10px;
+    border-radius: 15%;
+    width: 120px;
+    height: 80px;
 }
