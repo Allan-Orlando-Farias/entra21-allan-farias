@@ -1,0 +1,13 @@
+.texto {
+    font-size: 18px;
+}
+ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img {
+    width: 120px;
+    height: auto;
+}

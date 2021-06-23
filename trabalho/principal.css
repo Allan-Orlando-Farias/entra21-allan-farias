@@ -28,7 +28,7 @@ a {
 }
 .nav__img {
     display: block;                /* Mudando a imagem para bloco */
-    padding: 0px 10px;             /* Adicionando o padding */
+    padding: 10px 10px;             /* Adicionando o padding */
     border-radius: 15%;            /* Deixando a borda mais redonda */
     width: 120px;                  /* Mudando o tamanho da img */
     height: 80px;                  /* Mudando o tamanho da img */
