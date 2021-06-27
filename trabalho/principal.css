@@ -1,16 +1,29 @@
 html {
     font-size: 62.5%;               /* A cada 1rem será considerado 10px */
 }
+
+.aqui {
+    border-bottom: 2px solid black;
+}
+
 a {
     text-decoration: none;         /* Tirando a formatação de link */
     color: black;                /* Mudando a cor */
 }
+
 .header__title {
     text-align: center;            /* Alinhando o texto */
+    font-size: 3rem;
 }
+
+.nav__link {
+    font-size: 1.5rem;
+}
+
 .header__text {
     font-size: 2.0rem;               /* Definindo o tamanho da fonte */
 }
+
 .nav__list {
     margin-top: 3.0rem;              /* Tamanho da margem de cima*/
     justify-content: space-evenly; /* Espaçamentos das cidades */
@@ -18,14 +31,17 @@ a {
     flex-wrap: wrap;               /* Forçando a quebra de linhas */
     padding: 0rem;                  /* Tirando o padding */
 }
+
 .nav__column1, .nav__column2, .nav__column3, .nav__column4, .nav__column5 {
     margin: 1.0rem;                                                                        /* Definindo a margem */
     font-size: 1.8rem;                                                                     /* Tamanho de fonte */
     text-align: center;                                                                  /* Alinhando o texto */
     background-image: linear-gradient(rgb(211, 209, 209) 15%, rgb(29, 29, 29) 100%); /* Colocando uma cor no background das li*/
     border-radius: 10%;                                                                  /* Deixando com ar bordar redondas */
-    list-style: none;                                                                    /* Tirando o estilo de lista */
+    list-style: none;
+    padding: 1rem;                                                     /* Tirando o estilo de lista */
 }
+
 .nav__img {
     display: block;                /* Mudando a imagem para bloco */
     padding: 1.0rem 1.0rem;             /* Adicionando o padding */
@@ -33,29 +49,40 @@ a {
     width: 12.0rem;                  /* Mudando o tamanho da img */
     height: 8.0rem;                  /* Mudando o tamanho da img */
 }
+
 .rodape {
     margin-top: 3.0rem;              /* Adicionando a margem de cima */
 }
+
 .rodape p {
     font-size: 1.2rem;
 }
+
 @media screen and (min-width: 480px) {
     html {
         font-size: 65%;
     }
+
+    .header__title {
+        font-size: 4rem;
+    }
+
     .nav__list {
         padding: 1.1rem;             /* Adicionando o padding */
     }
+
     .nav__column {
         margin-bottom: 2.0rem;       /* Adicionando a margem de baixo */
         margin-right: 3.2rem;        /* Adicionando a margem da direita */
     }
+
     .nav__img {
-        padding: 3.0rem;             /* Adicionando o padding */
-        width: 12.0rem;              /* Aumentando o tamanho da img */
-        height: auto;              /* Aumentando o tamanho da img */
+        padding: 2.1rem;             /* Adicionando o padding */
+        width: 13rem;                /* Aumentando o tamanho da img */
+        height: auto;                /* Aumentando o tamanho da img */
     }
 }
+
 @media screen and (min-width: 735px) {
     .nav__list {
         margin: 4.0rem;             /* Definindo a margem */
@@ -64,11 +91,12 @@ a {
         margin: 2.0rem 7.0rem;        /* Definindo a margem */
     }
     .nav__img {
-        padding: 2.5rem;            /* Definindo o padding */
-        width: 12.0rem;             /* Aumentando o tamanho da img */
+        padding: 5.2rem;            /* Definindo o padding */
+        width: 15rem;             /* Aumentando o tamanho da img */
         height: auto;             /* Aumentando o tamanho da img */
     }
 }
+
 @media screen and (min-width: 980px) {
     html {
         font-size: 70%;
@@ -83,36 +111,44 @@ a {
         margin: 2.0rem 9.0rem;        /* Definindo a margem */
     }
     .nav__img {
-        padding: 2.0rem;            /* Definindo o padding */
-        width: 14.0rem;             /* Aumentando a img */
+        padding: 5rem;            /* Definindo o padding */
+        width: 19rem;             /* Aumentando a img */
         height: auto;             /* Aumentando a img */
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 71%;
     }
+
     .header__title {
         font-size: 5rem;
     }
+
     .header__text, .nav__link {
         font-size: 3rem;
     }
+
     .rodape p {
         font-size: 2rem;
     }
+
     .nav__list {
         margin: 12.0rem;            /* Definindo a margem */
     }
+
     .nav__column {
         margin: 3.0rem 9.0rem;        /* Definindo a margem */
     }
+
     .nav__img {
-        padding: 4.0rem;            /* Definindo o padding */
-        width: 20.0rem;             /* Aumentando o tamanho da img */
+        padding: 4rem;            /* Definindo o padding */
+        width: 20rem;             /* Aumentando o tamanho da img */
         height: auto;             /* Aumentando o tamanho da img */
     }
 }
+
 @media screen and (min-width: 1680px) {
     html {
         font-size: 100%;          /* Mudando o tamanho da fonte */
