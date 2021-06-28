@@ -44,7 +44,7 @@ a {
 
 .nav__img {
     display: block;                /* Mudando a imagem para bloco */
-    padding: 1.0rem 1.0rem;             /* Adicionando o padding */
+    padding: 1.0rem;             /* Adicionando o padding */
     border-radius: 15%;            /* Deixando a borda mais redonda */
     width: 12.0rem;                  /* Mudando o tamanho da img */
     height: 8.0rem;                  /* Mudando o tamanho da img */
