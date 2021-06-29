@@ -14,6 +14,11 @@ h2 {
     font-size: 1.5rem;
 }
 
+.texto__aninhado {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 ul {
     padding: 0rem;
     justify-content: center;
@@ -33,6 +38,19 @@ li {
     height: auto;
 }
 
+.img__2 {
+    padding: 1.0rem;                      /* Adicionando o padding */
+    height: 8.0rem;
+    width: 38rem;
+    height: auto;
+}
+
+.img__3 {
+    padding: 1.0rem;                      /* Adicionando o padding */
+    height: 8.0rem;
+    width: 19.4rem;
+    height: auto;
+}
 @media screen and (min-width: 480px) {
     html {
         font-size: 65%;

@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;               /* A cada 1rem será considerado 10px */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.texto__alinhado {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.texto {
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 0rem;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 3rem;
+}
+
+.img {
+    padding: 1.0rem;                      /* Adicionando o padding */
+    height: 8.0rem;
+    width: 19rem;
+    height: auto;
+}
+
+.img__2 {
+    padding: 1.0rem;                      /* Adicionando o padding */
+    height: 8.0rem;
+    width: 25rem;
+    height: auto;
+}
+
+.img__3 {
+    padding: 1.0rem;                      /* Adicionando o padding */
+    height: 8.0rem;
+    width: 25rem;
+    height: auto;
+}
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 65%;
+    }
+
+    li {
+        margin: 0rem;
+    }
+
+    .img {
+        padding: 1rem;                    /* Adicionando o padding */
+        width: 12rem;                     /* Mudando o tamanho da img */
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 735px) {
+    li {
+        margin: 2rem;    
+    }
+
+    .img {
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 980px)  {
+    html {
+        font-size: 70%;
+    }
+
+    .img {
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 71%;
+    }
+
+    .img {
+        width: 25rem;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    html {
+        font-size: 100%;          /* Mudando o tamanho da fonte */
+    }
+}
