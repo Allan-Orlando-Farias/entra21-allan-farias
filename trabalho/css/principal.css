@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;               /* A cada 1rem será considerado 10px */
+    background-color: lightgray;
 }
 
 .aqui {
