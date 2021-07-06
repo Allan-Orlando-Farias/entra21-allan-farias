@@ -1,0 +1,10 @@
+Para cada um dos seguintes elementos, ache uma forma de acessá-los:
+    <div> 
+    <ul>
+    <li>
+
+1) R: console.log(document.body.firstElementChild)
+
+2) R: console.log(document.body.querySelector("ul"))
+
+3) R: console.log(document.body.querySelectorAll("li"))
