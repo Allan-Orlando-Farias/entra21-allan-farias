@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: blue;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        const div = document.querySelector("div")
+
+        div.addEventListener("click", () => {
+            // Criar uma textarea
+            const textarea = document.createElement("textarea")
+
+            // Atribuir o innerHTML da dvi no value da textarea
+            textarea.value = div.innerHTML
+
+            // Adicionar o evento de blur na textarea
+            textarea.addEventListener("blur", () => {
+                // Adicionar o value da textarea para o innerHTML da div
+                div.innerHTML = textarea.value
+                // Substituir a textarea pela div (replaceWidth))
+                textarea.replaceWidth(div)
+            })
+            textarea.addEventListener("keydown", (event) => {
+                if ()
+            })
+        })
+    </script>
+</body>
+</html>

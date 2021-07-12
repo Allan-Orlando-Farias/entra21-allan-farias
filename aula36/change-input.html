@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inputInicial">
+        Valor Inicial
+        <input type="number" id="inputInicial">
+    </label>
+    <br><br>
+    <label for="inputJuros">
+        Juros
+        <input type="number" id="inputJuros">
+    </label>
+    <br><br>
+    <label for="inputMeses">
+        Quantidade de meses
+        <input type="number" id="inputMeses">
+    </label>
+    <p id="resultado">Resultado: R$ 0,00</p>
+    <script>
+        const inputInicial = document.querySelector("#inputInicial"),
+              inputJuros = document.querySelector("#inputJuros"),
+              inputMeses = document.querySelector("#inputMeses"),
+              pResultado = document.querySelector("#resultado")
+
+        
+        let resultado = Math.round(inputInicial * (1 + (inputJuros / 100) * (inputMeses / 12)))
+    </script>
+</body>
+</html>
