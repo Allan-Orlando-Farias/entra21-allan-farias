@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {                
+            color: #333;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        .errado {
+            border: 2px solid red;
+        }
+
+        .erro {
+            color: red;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Envie seu comentário</h2>
+    <form>        
+        <ul>
+            <li>
+                <label for="uname">Nome de usuário</label>
+                <input type="text" name="uname" id="uname" required maxlength="20" minlength="5">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <div id="email-error" class="erro" type="text"></div>
+            </li>
+            <li>
+                <label for="phone">Telefone:</label>
+                <input type="tel" name="phone" id="phone" required maxlength="15" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+            </li>
+            <li>
+                <label for="comment">Comentário:</label>
+                <textarea name="comment" id="comment" required maxlength="200">
+                </textarea>
+            </li>
+            <li>
+                <button>Enviar comentário</button>
+            </li>
+        </ul>
+    </form>
+
+    <script>
+        let email = document.querySelector("#email")
+
+        email.addEventListener("blur", () => {
+            if (!email.value.includes("@")) {
+                document.querySelector(".erro").textContent = "E-mail inválido"
+                email.className = "errado"
+            }
+        })
+
+        let nome = document.querySelector("#uname")
+
+    </script>
+</body>
+</html>
