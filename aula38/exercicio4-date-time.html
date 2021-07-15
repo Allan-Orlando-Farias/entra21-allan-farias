@@ -8,12 +8,15 @@
 <body>
     <script>
         function obtemSegundos() {
-            let hoje = new Date().getHours()
-            let segundo = hoje * 60 * 60
-            console.log(segundo)
+            let hoje = new Date(),
+                horas = hoje.getHours(),
+                minutos = hoje.getMinutes(),
+                segundos = hoje.getSeconds()
+
+                return horas * 3600 + minutos * 60 + segundos
         }
 
-        obtemSegundos()
+        console.log(obtemSegundos())
     </script>
 </body>
 </html>

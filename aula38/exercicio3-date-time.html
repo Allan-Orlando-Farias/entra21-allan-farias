@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
+        let ano = 2012,
+            mes = 2
         function obtemUltimoDiaMes(ano, mes) {
-            let dia = new Date(2012, 2, 0)
+            let dia = new Date(ano, mes, 0).getDate()
             console.log(dia)
         }
-        obtemUltimoDiaMes(2012, 1)
+
+        obtemUltimoDiaMes(ano, mes)
     </script>
 </body>
 </html>

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        function obtemSegundos() {
+            let hoje = new Date(),
+                horas = hoje.getHours(),
+                minutos = hoje.getMinutes(),
+                segundos = hoje.getSeconds()
+
+            return horas * 3600 + minutos * 60 + segundos
+        }
+
         function segundosParaAmanha() {
-            let hoje = new Date().getHours()
-            let segundos = hoje * 60 * 60
-            console.log(segundos)
-            let amanha = 24 * 60 * 60 - segundos
-            console.log(amanha)
+            let segundosPassados = obtemSegundos(new Date())
+            return 86400 - segundosPassados
         }
 
         segundosParaAmanha()
     </script>
 </body>
+
 </html>
