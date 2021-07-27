@@ -26,7 +26,8 @@ a {
 }
 
 .nav__list {
-    margin-top: 3.0rem;              /* Tamanho da margem de cima*/
+    margin: 0rem;
+    margin-top: 3.0rem;            /* Tamanho da margem de cima*/
     justify-content: space-evenly; /* Espaçamentos das cidades */
     display: flex;                 /* Criando um flex */
     flex-wrap: wrap;               /* Forçando a quebra de linhas */
