@@ -54,7 +54,6 @@
 
         // Ex 3: Porque os dois tem o mesmo estômago?
         let hamster = {
-            estomago = [],
 
             comer(comida) {
                 this.estomago.push(comida)
@@ -62,13 +61,13 @@
         }
 
         let hamtaro = {
-            __proto__ = hamster,
-            estomago = []
+            estomago: [],
+            __proto__: hamster
         }
 
         let fofuxo = {
-            __proto__ = hamster,
-            estomago = []
+            estomago: [],
+            __proto__: hamster
         }
 
         hamtaro.comer("Maçã")

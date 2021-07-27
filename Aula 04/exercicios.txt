@@ -1,0 +1,60 @@
+1) 
+console.log("Oi, meu nome é Allan!")
+
+2)
+console.log("1) Cadastrar funcionário\n2) Listar funcionários\n3) Editar funcionário\n4) Deletar funcionário\n5) Sair")
+
+3)
+let nome = João
+let admin = nome
+console.log(nome)
+
+4)
+let nome = "Allan"
+let idade = 16
+let peso = 52
+let altura = 1,80
+let telefone = "(47) 9 92018452"
+
+console.log(`Nome: ${nome}\nIdade: ${idade}\nPeso: ${peso}\nAltura: ${altura}\nTelefone: ${telefone}`)
+
+5)
+
+
+6)
+let dataNascimento = "16/11/2004"
+let quantidadeFilhos = 0
+let usuarioLogado = "Allan"
+
+7)
+let nome = "João"
+console.log(`Olá ${1}`) // Olá 1
+console.log(`Olá ${"nome"}`) // Olá nome
+alert(`Olá ${nome}`) // Olá João
+
+8)
+let x = 10
+let y = 8
+let area = (x * y) / 2 + 3 ** 4
+console.log(area)
+
+R: 121
+
+9)
+let a = 2
+let x = 1 + (a *= 2)
+console.log(a, x)
+
+R: 4, 5
+
+10)
+A) "" + 1 + 0 // 10
+B) "" - 1 + 0 // -1
+C) 6 / "3" // 2
+D) "2" * "3" // 6
+E) 4 + 5 + "px" // 9px
+F) "$" + 4 + 5 // $45
+G) "4" - 2 // 2
+
+11)
+let altura = +prompt("Digite a altura do retângulo")
