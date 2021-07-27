@@ -58,3 +58,4 @@ G) "4" - 2 // 2
 
 11)
 let altura = +prompt("Digite a altura do retângulo")
+let largura = +prompt("Digite a largura do retângulo")
