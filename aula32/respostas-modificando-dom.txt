@@ -1,4 +1,11 @@
-1) R:
+1) R:   function clear(elem) {
+            let lista = document.querySelectorAll("li")
+            for (let li of lista) {
+                li.remove()
+            }
+        }
+
+        clear(elem)
 
 2) R:   let lista = document.querySelector("ul")
         lista.insertAdjacentHTML("beforeend", "<li>Item 2</li><li>Item 3</li>")
