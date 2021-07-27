@@ -17,7 +17,6 @@
         // class Coelho extends Animal {
         //     constructor(nome) {
         //         super(nome)
-        //         this.nome = nome
         //         this.criadoEm = Date.now()
         //     }
         // }
@@ -26,29 +25,29 @@
         // alert(coelho.nome)
 
         // Ex 2:
-        class Relogio {
-            constructor(formato) {
-                this.formato = formato
-            }
+        // class Relogio {
+        //     constructor(formato) {
+        //         this.formato = formato
+        //     }
 
-            renderizar() {
-                let data = new Date()
+        //     renderizar() {
+        //         let data = new Date()
 
-                let horas = data.getHours()
-                if (horas < 10) horas = "0" + horas
+        //         let horas = data.getHours()
+        //         if (horas < 10) horas = "0" + horas
 
-                let minutos = data.getMinutes()
-                if (minutos < 10) minutos = "0" + minutos
+        //         let minutos = data.getMinutes()
+        //         if (minutos < 10) minutos = "0" + minutos
 
-                let segundos = data.getSeconds()
-                if (segundos < 10) segundos = "0" + segundos
+        //         let segundos = data.getSeconds()
+        //         if (segundos < 10) segundos = "0" + segundos
 
-                let resultado = this.formato
-                    .replace("h", horas)
-                    .replace("m", minutos)
-                    .replace("s", segundos)
-                
-                console.log(resultado)
+        //         let resultado = this.formato
+        //             .replace("h", horas)
+        //             .replace("m", minutos)
+        //             .replace("s", segundos)
+
+        //         console.log(resultado)
             }
 
             parar() {
@@ -61,8 +60,47 @@
             }
         }
 
-        let timer1 = new Relogio("h-m-s")
+        class RelogioComTick extends Relogio{
+            constructor(formato, tick) {
+                super(formato);
+                this.tick = tick;
+            }
+
+            comecar() {
+                super.renderizar();
+                this.timer = setInterval(() => super.renderizar(), this.tick)
+            }
+        }
+
+        let timer1 = new RelogioComTick("h:m:s", 3000)
         timer1.comecar()
+
+        // Ex 3:
+        // class Imovel {
+        //     constructor(endereco, preco) {
+        //         this.endereco = endereco
+        //         this.preco = preco
+        //     }
+        // }
+
+        // class Novo extends Imovel {
+        //     constructor(endereco, adicional) {
+        //         super(preco)
+        //         this.adicional = adicional
+        //     }
+
+        //     calculaTotal() {
+        //         let soma = preco + adicional
+        //         console.log(soma)
+        //     }
+        // }
+
+        // class Velho extends Imovel {
+        //     constructor(endereco, desconto) {
+        //         super(endereco)
+        //         this.desconto = desconto
+        //     }
+        // }
     </script>
 </body>
 </html>
