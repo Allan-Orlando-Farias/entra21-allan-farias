@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ex 1: 
+        // let animal = {
+        //     pula: null
+        // }
+
+        // let coelho = {
+        //     __proto__: animal,
+        //     pula: true
+        // }
+
+        // console.log(coelho.pula) // true
+
+        // delete coelho.pula
+
+        // console.log(coelho.pula) // null
+
+        // delete animal.pula
+
+        // console.log(coelho.pula) // undefined
+
+
+        // Ex 2:
+        // let cabeca = {
+        //     oculos: 1
+        // }
+
+        // let mesa = {
+        //     caneta: 3
+        // }
+
+        // let cama = {
+        //     lenco: 1,
+        //     travesseiro: 2
+        // }
+
+        // let bolso = {
+        //     dinheiro: 200
+        // }
+
+        // bolso.__proto__ = mesa
+        // console.log(bolso.caneta)
+        // cama.__proto__ = cabeca
+        // console.log(cama.oculos)
+        // console.log(mesa.dinheiro)
+
+        // Ex 3: Porque os dois tem o mesmo estômago?
+        let hamster = {
+            estomago = [],
+
+            comer(comida) {
+                this.estomago.push(comida)
+            }
+        }
+
+        let hamtaro = {
+            __proto__ = hamster,
+            estomago = []
+        }
+
+        let fofuxo = {
+            __proto__ = hamster,
+            estomago = []
+        }
+
+        hamtaro.comer("Maçã")
+        console.log(hamtaro.estomago)
+
+        console.log(fofuxo.estomago)
+    </script>
+</body>
+</html>
