@@ -9,7 +9,9 @@ for (let i = 0; i < expoente; i++) {
 
 console.log(conta)
 
+
 2)
+
 
 3)
 let cont25 = 0
@@ -35,6 +37,7 @@ while (true) {
 console.log(`Quantidade de números no intervalo [0-25]: ${cont25}`)
 console.log(`Quantidade de números no intervalo [26-50]: ${cont50}`)
 console.log(`Quantidade de números no intervalo [50-75]: ${cont75}`)
+
 
 4)
 for 
