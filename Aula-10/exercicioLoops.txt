@@ -1,56 +1,64 @@
 1)
-/* let i = 0
+let i = 0
+
 for (i; i < 10; i++) {
     console.log("Olá, Mundo!")
 }
-*/
-/* let i = 0
+
+let i = 0
+
 while (i < 10) {
     console.log("Olá, Mundo!")
     i++
 }
-*/
-/*
+
 let i = 0
+
 do {
     console.log("Olá, Mundo!")
     i++
 } while (i < 10)
-*/
+
 
 2)
 // USANDO O FOR
+
 for (let i = 0; i < 10; ++i) {
     console.log(`Estou aparecendo na tela ${i + 1}`)
 }
 
+
 // USANDO O WHILE
+
 let i = 0
 while (i < 10) {
     console.log(`Estou aparecendo na tela ${++i}`)
 }
 
+
 // USANDO O DO/WHILE
+
 let i = 0
 do {
     console.log(`Estou aparecendo na tela ${++i}`)
 } while (i < 10)
 
-3)
 let contador = 11
 
     for (let i = 11; i > 0; i--) {
         console.log(--contador)
     }
 
+
 4) 
 for (let i = 3; i > 0; i--) {
-    let numero1 = +prompt("Digite um número")
-    let numero2 = +prompt("Digite outro número")
-    let resultado = numero1 - numero2
+    let numero1 = +prompt("Digite um número"),
+        numero2 = +prompt("Digite outro número"),
+        resultado = numero1 - numero2
 
     console.log(`${numero1} - ${numero2} = ${resultado}`)
 }
+
 
 5)
 let numero = 0
@@ -60,9 +68,10 @@ for (let i = 100; i > 0; i--) {
     console.log(numero)
 }
 
+
 6)
-let soma = 0
-let media = 0
+let soma = 0,
+    media = 0
 
 for (let i = 5; i > 0; i--) {
     let valor = +prompt("Digite um valor")
@@ -73,6 +82,7 @@ for (let i = 5; i > 0; i--) {
 
 console.log(`A soma é ${soma}\nE a média é ${media.toFixed(2)}`)
 
+
 7)
 let n = +prompt("Digite um valor")
 
@@ -82,6 +92,7 @@ for (let i = 0; i <= n; i++) {
     }
 }
 
+
 8)
 let numero = +prompt("Digite um numero")
 
@@ -89,6 +100,7 @@ for (let i = 1; i <= 10; i++) {
     let conta = numero * i
     console.log(`${numero} x ${i} = ${conta}`)
 }
+
 
 9)
 let soma = 0
@@ -100,9 +112,10 @@ for (let i = 0; i < 5; i++) {
 
 console.log(`Apareceu ${soma} números negativos`)
 
+
 10)
-let par = 0
-let impar = 0
+let par = 0,
+    impar = 0
 
 for (let i = 0; i < 10; i++) {
     let numero = +prompt("Digite um valor")
@@ -112,9 +125,10 @@ for (let i = 0; i < 10; i++) {
 
 console.log(`Pares: ${par}\nÍmpares ${impar}`)
 
+
 11)
-let dentro = 0
-let fora = 0
+let dentro = 0,
+    fora = 0
 
 while (true) {
     let numero = +prompt("Digite um número")
@@ -129,12 +143,14 @@ while (true) {
 console.log(`${dentro} números estão no intervalo`)
 console.log(`${fora} números estão fora do intervalo`)
 
+
 12)
-let media = 0
-let cont = 0
+let media = 0,
+    cont = 0
 
 while (true) {
     let numero = +prompt("Digite um numero")
+
     if (numero < 0) {
         break
     }
@@ -142,8 +158,10 @@ while (true) {
     cont ++
     media += numero
 }
+
 let calculo = media / cont
 console.log(calculo.toFixed(2))
+
 
 13)
 let resultado = ""
@@ -151,11 +169,13 @@ let resultado = ""
 for (let i = 1; i <= 15; i++) {
     resultado += (`${7 * i} `)    
 }
+
 console.log(resultado)
 
+
 14)
-let numero = +prompt("Digite um número")
-let n = numero
+let numero = +prompt("Digite um número"),
+    n = numero
 
 for (let i = numero - 1; i > 0; i--) {
     n *= i
@@ -163,11 +183,12 @@ for (let i = numero - 1; i > 0; i--) {
 
 console.log(n)
 
+
 15)
-let cont = 0
-let mediaSalarial = 0
-let maior = 0
-let mediaFilho = 0
+let cont = 0,
+    mediaSalarial = 0,
+    maior = 0,
+    mediaFilho = 0
 
 while (true) {
     let salario = +prompt("Digite o seu salário")
@@ -189,9 +210,10 @@ console.log(`Média salarial: ${mediaSalarial.toFixed(2)}`)
 console.log(`Média de filhos: ${mediaFilho.toFixed(2)}`)
 console.log(`Maior salário: ${maior.toFixed(2)}`)
 
+
 16)
-let valorMaior = 0
-let valorMenor = 0
+let valorMaior = 0,
+    valorMenor = 0
 
 for(let i = 0; i < 5; i++) {
     let numero = +prompt("Insira um valor:")
@@ -200,19 +222,22 @@ for(let i = 0; i < 5; i++) {
         valorMaior = numero
         valorMenor = numero
     }
+    
     if (numero < valorMenor) {
         valorMenor = numero
     }
 }
+
 console.log(`O menor valor digitado foi: ${valorMenor}`)
 console.log(`O maior valor digitado foi: ${valorMaior}`)
 
+
 17)
-let valor1 = 0
-let valor2 = 0
-let valor3 = 0
-let valor4 = 0
-let valor5 = 0
+let valor1 = 0,
+    valor2 = 0,
+    valor3 = 0,
+    valor4 = 0,
+    valor5 = 0
 
 alert("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco\nVoto:")
 
@@ -227,7 +252,9 @@ while (true) {
     if (voto === 5) valor5 += 1
 
 }
+
 console.log(`Total de votos:\nJosé Bolinha: ${valor1}\nMaria Nascimento: ${valor2}\nJoão da Silva: ${valor3}\nVoto nulo: ${valor4}\nVoto em branco: ${valor5}`)
+
 
 18)
 for (let i = 1; i <= 4; i++) {
@@ -239,6 +266,7 @@ for (let i = 1; i <= 4; i++) {
     if (valor >= 9.0 && valor <= 10.0) alert("A")
 }
 
+
 19)
 while (true) {
     let matricula = prompt("Digite a sua matricula")
@@ -247,25 +275,26 @@ while (true) {
         break
     }
 
-    let nota1 = +prompt("Digite a primeira nota")
-    let nota2 = +prompt("Digite a segunda nota")
-    let nota3 = +prompt("Digite a terceira nota")
-
-    let media = (nota1 + nota2 + nota3) / 3
+    let nota1 = +prompt("Digite a primeira nota"),
+        nota2 = +prompt("Digite a segunda nota"),
+        nota3 = +prompt("Digite a terceira nota"),
+        media = (nota1 + nota2 + nota3) / 3
 
     console.log(`A média do aluno com a matrícula ${matricula} é ${media.toFixed(2)}`)
 }
 
+
 20)
-let i = +prompt("Digite um número inicial")
-let num = +prompt("Digite um número final")
-let soma = 0
-let multiplicacao = 1
+let i = +prompt("Digite um número inicial"),
+    num = +prompt("Digite um número final"),
+    soma = 0,
+    multiplicacao = 1
 
 for (i; i <= num; i++) {
     if (i % 2 === 0) {
         soma += i
     }
+
     if (i % 2 === 1) {
         multiplicacao *= i
     }
@@ -274,11 +303,12 @@ for (i; i <= num; i++) {
 console.log(`A soma dos números pares: ${soma}`)
 console.log(`Multiplicação dos ímpares: ${multiplicacao}`)
 
+
 21)
-let contadorNumerosPrimos = 0
-let numeroAtual = 2    
-let flag = false
-let primos = ""
+let contadorNumerosPrimos = 0,
+    numeroAtual = 2,
+    flag = false,
+    primos = ""
 
 while (contadorNumerosPrimos < 20) {            
     for (let i = 2; i < numeroAtual; i++) {
