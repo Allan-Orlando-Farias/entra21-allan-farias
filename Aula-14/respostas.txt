@@ -34,6 +34,7 @@ for(let i = 0; i < 3; i++) {
 
 console.log(`Essa matriz possui ${quantidadeMaior10} números maiores que 10`)
 
+
 2)
 let matriz = []
 
@@ -49,6 +50,7 @@ for (let i = 0; i < 5; i++) {
     matriz[i++][j] = 1
     }
 }
+
 let mostrandoMatriz = ""
 
 for (let i = 0; i < 5; i++) {
@@ -59,6 +61,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log(mostrandoMatriz)
+
 
 3)
 let matriz = []
@@ -86,6 +89,7 @@ if (numero == true) {
 } else {
     console.log(`Valor ${numero} não foi encontrado`)
 }
+
 
 4)
 let matriz = []
@@ -174,6 +178,7 @@ console.log(mostrandoMatriz)
 soma += matriz[0][1] + matriz[0][2] + matriz[1][2]
 console.log(soma)
 
+
 // COREÇÃO
 let matriz = [],
     somaAcimaDiagonal = 0
@@ -199,6 +204,7 @@ console.log(mostrarMatriz)
 console.log(`A soma dos elementos acima da diagona principal é: ${somaAcimaDiagonal}`)
 }
 
+
 6)
 let matriz = []
 let nota = 0
@@ -220,6 +226,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 console.log(mostrandoMatriz)
+
 
 // COREÇÃO
 let matriz = []

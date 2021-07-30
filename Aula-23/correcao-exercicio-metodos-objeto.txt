@@ -1,0 +1,43 @@
+1)
+let contador = {
+    atual: 0,
+    incrementa() {
+        this.atual++
+    },
+    decrementa() {
+        this.atual--
+    },
+    incrementaEm(quantidade) {
+        this.atual += quantidade
+    },
+    decrementaEm(quantidade) {
+        this.atual -= quantidade
+    },
+    mostraContador() {
+        alert(this.atual)
+    }
+}
+
+contador.incrementa()
+contador.mostraContador()
+
+
+2)
+let calculadora = {
+    valor1: 0,
+    valor2: 0,			
+    lerValores() {
+        this.valor1 = +prompt("Digite o valor 1")
+        this.valor2 = +prompt("Digite o valor 2")
+    },
+    soma() {
+        return this.valor1 + this.valor2
+    },
+    multiplicacao() {
+        return this.valor1 * this.valor2
+    }
+}
+
+calculadora.lerValores()
+console.log(calculadora.soma())
+console.log(calculadora.multiplicacao())

@@ -1,0 +1,22 @@
+1)
+function lerNumero() {
+while (true) {
+    let numero = prompt("Digite um número")
+
+    if (isFinite(numero)) return
+}
+}
+
+
+2)
+function random(minimo, maximo) {
+    return Math.floor(Math.random() * (maximo - minimo)) + minimo
+}
+
+
+3)
+let i = 0;
+while (i < 10) {
+    i += 0.2;
+    console.log(i)
+}

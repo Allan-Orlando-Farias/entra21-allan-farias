@@ -169,6 +169,7 @@ console.log(vetorAleatorio(vetor))
 console.log(menorNumero(vetor))
 console.log(maiorNumero(vetor))
 
+
 13)
 "use strict"
 let idadeAnos = +prompt("Digite a sua idade em anos"),
@@ -205,6 +206,7 @@ let fatorial = (numero) => {for (let i = numero -1; i > 0; i--) n *= i
 }
 
 console.log(fatorial(numero))
+
 
 16)
 "use strict"

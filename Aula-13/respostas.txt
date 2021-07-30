@@ -1,6 +1,6 @@
 1)
-let vetor = []
-let pares = 0
+let vetor = [],
+    pares = 0
 
 for (let i = 0; i < 10; i++) {
     vetor[i] = +prompt(`Digite o ${i + 1}° valor`)
@@ -17,8 +17,8 @@ console.log(`O vetor possui ${pares} valores(s) pares`)
 
 
 2)
-let teste = []
-let maior = 0
+let teste = [],
+    maior = 0
 
 for (let i = 0; i < 5; i++) {
     teste[i] = +prompt(`Digite o ${i+1}° valor`)
@@ -34,9 +34,9 @@ console.log(`Posição do maior número do vetor: ${teste.lastIndexOf(maior)}`)
 
 
 3)
-let vetor = []
-let maior = 0
-let menor = +prompt("Digite um numero)
+let vetor = [],
+    maior = 0,
+    menor = +prompt("Digite um numero)
 
 for (let i = 0; i < 4; i++) {
     vetor[i] = +prompt(`Digite o valor para ${i + 1}° posição`)
@@ -66,10 +66,11 @@ for (let i = 0; i < 5; i++) {
 console.log(`Vetor: ${vetor}\nVetor Invertido: ${vetorInverso}`)
 
 
-5) // Binary Search
+5) 
+// Binary Search
 let vetor = ["allan", "william", "gustavo", "paulo", "luiz"]
 
-nome = prompt("Digite um nome").toLowerCase()
+let nome = prompt("Digite um nome").toLowerCase()
 
 if (vetor[0] === nome || vetor[1] === nome || vetor[2] === nome || vetor[3] === nome || vetor[4] === nome) {
     console.log("Achei")
@@ -77,9 +78,10 @@ if (vetor[0] === nome || vetor[1] === nome || vetor[2] === nome || vetor[3] === 
     console.log("Não achei")
 }
 
+
 6)
-let a = [1, 0, 5, -2, -5, 7]
-let soma = a[0] + a[1] + a[5]
+let a = [1, 0, 5, -2, -5, 7],
+    soma = a[0] + a[1] + a[5]
 
 console.log(`Soma: ${soma}`)
 a[4] = 100
@@ -87,6 +89,7 @@ a[4] = 100
 for (let i = 0; i < 6; i++) {
     console.log(`${a[i]}\n`)
 }
+
 
 7)
 let vetor = []
@@ -99,6 +102,7 @@ for (let i = 0; i < 5; i++) {
 
 console.log(vetor)
 console.log(vetorAoQuadrado)
+
 
 8)
 let vetor = []
@@ -152,6 +156,7 @@ if (y > 0 && y < 8 ){
 }
 
 vetor = String(vetor)
+
 console.log(vetor)
 console.log(`A soma dos valores nas posições ${x} e ${y} é ${soma}`)
 
@@ -187,6 +192,7 @@ for (let i = 0; i < 5; i++) {
 console.log(`Vetor: ${vetor}`)
 console.log(`Posição do maior valor: ${posicaoMaior}`)
 console.log(`Posição do menor valor: ${posicaoMenor}`)
+
 
 12)
 let vetor = []
@@ -253,6 +259,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 let iguais = true
+
 for (let i = 0; i < 5; i++) {
     vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)
 
@@ -312,6 +319,7 @@ for (let i = inicial; i <= final; i += 2) {
 
 vetor = String(vetor).split("")
 vetor.join(", ")
+
 console.log(vetor)
 
 
@@ -337,13 +345,10 @@ for(let i = 0; i < 10; i++) {
         vetor[i] = vetor[i + 1]
         vetor[i + 1] = valorSubstituto
     }
-
     }
-
 }
 
 console.log(vetor)
-
 
 
 18)
@@ -376,6 +381,7 @@ for (let i = variavel.length - 1; i > 0; i--) {
 }
 
 console.log(variavel.join(" "))
+
 
 20)
 let notas = []

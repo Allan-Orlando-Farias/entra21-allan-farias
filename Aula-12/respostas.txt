@@ -11,6 +11,22 @@ console.log(conta)
 
 
 2)
+let numero = +prompt("Digite um número"),
+    termo = numero,
+    penultimo = 0, 
+    ultimo = 1
+
+if (termo <= 2){
+    numero = termo - 1
+} else{
+    for (let i = 2; i <= termo; i++) {
+        numero = ultimo + penultimo;
+        penultimo = ultimo;
+        ultimo = numero;
+    }
+}
+
+console.log(numero)
 
 
 3)
@@ -21,9 +37,7 @@ let cont75 = 0
 while (true) {
     let numero = +prompt("Digite um numero")
 
-    if (numero < 0) {
-        break
-    }
+    if (numero < 0) break
 
     if (numero <= 25) {
         cont25++
@@ -40,8 +54,13 @@ console.log(`Quantidade de números no intervalo [50-75]: ${cont75}`)
 
 
 4)
-for 
-let numero = +prompt("Digite um numero")
+let numero = String(prompt("Digite um numero")),
+    normal = numero,
+    valor = normal.split(""),
+    inverter = ""
 
-console.log(numero)
-console.log(numero)
+for (let i = valor.length; i > 0; i--) {
+    inverter += valor[i - 1]
+}
+
+console.log(`Seu número era ${numero} e ao contrário é ${inverter}`)
