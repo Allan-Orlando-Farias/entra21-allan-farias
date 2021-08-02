@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <script>
+        let numero = +prompt("Digite um número"),
+            termo = numero,
+            penultimo = 0, 
+            ultimo = 1
+
+        if (termo <= 2){
+            numero = termo - 1
+        } else{
+            for (let i = 2; i <= termo; i++) {
+                numero = ultimo + penultimo;
+                penultimo = ultimo;
+                ultimo = numero;
+            }
+        }
+
+        console.log(numero)
+    </script>
+</body>
+</html>

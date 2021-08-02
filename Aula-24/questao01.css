@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+.descricao {
+    font-family: Arial;
+    text-align: justify;
+}
+
+h2 {
+    font-family: Arial;
+    text-align: center;
+}
+
+* {
+    text-align: center;
+}

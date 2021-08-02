@@ -1,0 +1,20 @@
+caption {
+    font-weight: bold;
+    background-color: rgb(47, 248, 148);
+    font-size: 24px;
+}
+caption, table, th, td {
+    border: 2px groove white;
+}
+
+.titulo {
+    background-color: rgb(190, 189, 189);
+}
+
+.valor {
+    text-align: right;
+}
+
+.tempo {
+    text-align: center;
+}

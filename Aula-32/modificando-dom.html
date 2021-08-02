@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="elem">
+        <li>Filho 1</li>
+        <li>Filho 2</li>
+    </ol>
+    <script>
+        function clear(elem) {
+            let lista = document.querySelectorAll("li")
+            for (let li of lista) {
+                li.remove()
+            }
+        }
+
+        clear(elem)
+    </script>
+</body>
+</html>

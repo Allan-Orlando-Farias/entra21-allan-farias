@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  background-color: green;
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-3 {
+    width: 21%;
+=======
+table, caption, tr {
+    border-collapse: collapse;
+    border: 1px solid white;
+    width: 400px;
+    height: auto;
+}
+
+caption {
+    color: white;
+    background-color: #098575;
+}
+.subtitulo {
+    background-color: #74bbb2;
+}
+
+.p {
+    background-color: #b4dfd9;
+    text-align: center;
+>>>>>>> a981b4178b10957322197502d665ccb9b555749d
+}

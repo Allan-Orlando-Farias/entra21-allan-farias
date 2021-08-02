@@ -1,0 +1,21 @@
+1) R:   function clear(elem) {
+            let lista = document.querySelectorAll("li")
+            for (let li of lista) {
+                li.remove()
+            }
+        }
+
+        clear(elem)
+
+2) R:   let lista = document.querySelector("ul")
+        lista.insertAdjacentHTML("beforeend", "<li>Item 2</li><li>Item 3</li>")
+
+3)  R:  let lista = document.querySelectorAll("li")
+            for (let li of lista) {
+                console.log(li.querySelectorAll("li"))
+                const descendentes = li.querySelectorAll("li").length
+
+                if (descendentes) {
+                    li.firstChild.data += `[${descendentes}]`
+                }
+            }
