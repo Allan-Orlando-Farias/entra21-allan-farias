@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de promises</title>
+</head>
+<body>
+    <script>
+        // Ex: 1
+
+        // function somar(n1, n2) {
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(() => {
+        //                 const resultado = n1 + n2;
+
+        //                 if (resultado % 2 !== 0) {
+        //                     reject(new Error("O valor é ímpar"));
+        //                 } else {
+        //                     resolve(resultado);
+        //                 }
+        //             }, 2000);
+        //         })
+        //     }
+
+        //     somar(1, 2)
+        //         .then(resultado => console.log(`A operação foi bem sucedida! O número ${resultado} é par`))
+        //         .catch(error => console.log(`A operação falhou! ${error.message}`));
+
+
+        // Ex: 2
+
+        // function dobrarEm5Segundos(numero) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             if (isNaN(numero)) {
+        //                 reject(new Error(("A operação falhou! O valor precisa ser numérico")))
+        //             } else {
+        //                 const dobro = numero * 2
+        //                 resolve(dobro)
+        //             }
+        //         }, 5000)
+        //     })
+        // }
+
+        // dobrarEm5Segundos("Allan")
+        //     .then(dobro => console.log(`A operação foi bem sucedida! O resultado é ${dobro}`))
+        //     .catch(error => console.log(`${error.message}`))
+
+
+        // Ex: 3
+
+        const listaPessoas = [
+            {
+                nome: "João",
+                idade: 25,
+                email: "joao@email.com"
+            },
+            {
+                nome: "Pedro",
+                idade: 33,
+                email: "pedro@email.com"
+            },
+            {
+                nome: "Marcos",
+                idade: 16,
+                email: "marcos@email.com"
+            }
+        ]
+
+        class UserNotFoundError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = "UserNotFoundError";
+            }
+        }
+
+        function obtemUsuarioPeloNome(nome) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    const usuario = listaPessoas.find(pessoa => pessoa.nome === nome);
+
+                    if (!usuario) {
+                        reject(new UserNotFoundError(("Usuário não está cadastrado")))
+                    } else {
+                        resolve(usuario);
+                    }
+                }, 3000);            
+            })
+        }
+
+        obtemUsuarioPeloNome("Pedro")
+            .then(usuario => console.log(`Usuário encontrado:\nnome: ${usuario.nome}\nidade: ${usuario.idade}\nemail: ${usuario.email}.`))
+            .catch(error => console.log(`${error.message}`))
+    </script>
+</body>
+</html>
