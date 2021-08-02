@@ -48,59 +48,64 @@
         //             .replace("s", segundos)
 
         //         console.log(resultado)
-            }
+        //     }
 
-            parar() {
-                clearInterval(this.timer)
-            }
+        //     parar() {
+        //         clearInterval(this.timer)
+        //     }
 
-            comecar() {
-                this.renderizar()
-                this.timer = setInterval(() => this.renderizar(), 1000)
-            }
-        }
+        //     comecar() {
+        //         this.renderizar()
+        //         this.timer = setInterval(() => this.renderizar(), 1000)
+        //     }
+        // }
 
-        class RelogioComTick extends Relogio{
-            constructor(formato, tick) {
-                super(formato);
-                this.tick = tick;
-            }
+        // class RelogioComTick extends Relogio {
+        //     constructor(formato, tick) {
+        //         super(formato);
+        //         this.tick = tick;
+        //     }
 
-            comecar() {
-                super.renderizar();
-                this.timer = setInterval(() => super.renderizar(), this.tick)
-            }
-        }
+        //     comecar() {
+        //         super.renderizar();
+        //         this.timer = setInterval(() => super.renderizar(), this.tick)
+        //     }
+        // }
 
-        let timer1 = new RelogioComTick("h:m:s", 3000)
-        timer1.comecar()
+        // let timer1 = new RelogioComTick("h:m:s", 3000)
+        // timer1.comecar()
 
         // Ex 3:
-        // class Imovel {
-        //     constructor(endereco, preco) {
-        //         this.endereco = endereco
-        //         this.preco = preco
-        //     }
-        // }
+        class Imovel {
+            constructor(endereco, preco) {
+                this.endereco = endereco
+                this.preco = preco
+            }
+        }
 
-        // class Novo extends Imovel {
-        //     constructor(endereco, adicional) {
-        //         super(preco)
-        //         this.adicional = adicional
-        //     }
+        class Novo extends Imovel {
+            constructor(endereco, adicional) {
+                super(endereco)
+                this.adicional = adicional
+            }
 
-        //     calculaTotal() {
-        //         let soma = preco + adicional
-        //         console.log(soma)
-        //     }
-        // }
+            calculaTotal() {
+                let soma = preco + adicional
+                console.log(soma)
+            }
+        }
 
-        // class Velho extends Imovel {
-        //     constructor(endereco, desconto) {
-        //         super(endereco)
-        //         this.desconto = desconto
-        //     }
-        // }
+        class Velho extends Imovel {
+            constructor(endereco, desconto) {
+                super(endereco)
+                this.desconto = desconto
+            }
+
+            calculaTotal() {
+                let preco = this.super
+                let desconto = preco - desconto
+            }
+        }
     </script>
 </body>
 </html>
