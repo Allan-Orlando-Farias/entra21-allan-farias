@@ -9,7 +9,7 @@ setInterval(() => {
             totalMemoryInBytes = os.totalmem(),
             freeMemoryInMB = parseInt(freeMemoryInBytes / 1024 / 1024).toString(),
             totalMemoryInMB = parseInt(totalMemoryInBytes / 1024 / 1024).toString(),
-            totalUsoMemoria = 
+            // totalUsoMemoria = 
         
         try {
             await fsPromises.appendFile(path.resolve(__dirname, "log.txt"), `Memória livre: ${freeMemoryInMB}MB\nMemória Total: ${totalMemoryInMB}MB\nUso da memória: ${totalUsoMemoria}%\n`);
