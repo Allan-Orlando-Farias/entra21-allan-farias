@@ -10,6 +10,13 @@ module.exports = (sequelize, DataTypes) => {
     isPasswordValid(password) {
       return bcrypt.compareSync(password, this.password);
     }
+
+    toJSON() {
+      return {
+        ...this.get(),
+        password: undefined
+      }
+    }
   };
   User.init({
     id: {

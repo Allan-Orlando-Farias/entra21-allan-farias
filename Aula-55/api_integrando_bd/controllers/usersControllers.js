@@ -1,8 +1,8 @@
-const { user } = require("../db/models");
+const { User } = require("../db/models");
 
 async function getAllUsers(req, res, next) {
     try {
-        const users = await user.findAll();
+        const users = await User.findAll();
     
         res.json(users);
     } catch(err) {
@@ -23,23 +23,27 @@ function getUserById(req, res, next) {
     res.json(user);
 };
 
-function createUser(req, res, next) {
-    const { id, name, email } = req.body;
+async function createUser(req, res, next) {
+const { name, email, password } = req.body;
 
-    // Verificando se o e-mail já está cadastrado
-    const userAlreadyExists = users.find(user => user.email === email);
-    
-    if (userAlreadyExists) {
-        return res.status(409).json({ message: "User already exists" })
+// Verificando se o e-mail já está cadastrado no BD
+try {
+    const [ user, created ] = await User.findOrCreate({
+    where: { email },
+    defaults: {
+        name,
+        password
     }
-    
-    const user = { id, name, email };
-
-    // Inserindo o usuário
-    users.push({ id, name, email });
-
+});
+if (!created) {
+    return res.status(409).json({ message: "User already exists" });
+}
     res.status(201).json(user);
-};
+} catch (err) {
+    console.log(err);
+    res.status(500).json({ message: "Server error" });
+}
+}
 
 function updateUser(req, res, next) {
     const { name } = req.body;
