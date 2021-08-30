@@ -1,7 +1,14 @@
-const users = require("../models/user");
+const { user } = require("../db/models");
 
-function getAllUsers(req, res, next) {
-    res.json(users);
+async function getAllUsers(req, res, next) {
+    try {
+        const users = await user.findAll();
+    
+        res.json(users);
+    } catch(err) {
+        console.log(err);
+        res.status(500).json({ message: "Server error" });
+    }
 };
 
 function getUserById(req, res, next) {
