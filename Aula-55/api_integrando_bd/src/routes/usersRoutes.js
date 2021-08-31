@@ -20,4 +20,9 @@ router.put("/:id", userControllers.updateUser);
 // Deletar um usuário
 router.delete("/:id", userControllers.deleteUser);
 
+// Criar um post para um usuário
+router.post("/:id/posts", userControllers.createPost)
+
+
+
 module.exports = router;
