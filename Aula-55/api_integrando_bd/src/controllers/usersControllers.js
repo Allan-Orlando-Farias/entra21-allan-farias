@@ -100,9 +100,10 @@ async function deleteUser(req, res, next) {
 async function createPost() {
     const userId = req.params.id;
     const { title, content } = req.body;
-
+    const file = req.file;
     try {
-
+        console.log(file),
+        res.end();
     } catch(err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
