@@ -1,4 +1,3 @@
-const { request, response, json } = require("express");
 const express = require("express");
 const app = express();
 const PORT = 3000;
@@ -6,16 +5,18 @@ const PORT = 3000;
 // Importando as rotas
 const usersRoutes = require("./routes/usersRoutes");
 
+// Definindo o local dos arquivos estáticos
+app.use("/static", express.static("uploads"));
+
 // Definindo os middlewares
 app.use(express.json());
-
 
 // Definindo as rotas
 app.use("/users", usersRoutes);
 
-// Rotas da raíz
+// Rotas da raiz "/"
 app.get("/", (request, response) => {
-    response.send("Olá, Mundo!");
+    response.send("Hello World");
 });
 
 app.post("/", (request, response) => {
@@ -30,11 +31,9 @@ app.delete("/", (request, response) => {
     response.send("Método DELETE");
 });
 
-// Banco de dados
-const users = [
-    { id: 1, name: "Pedro", email: "pedro@email.com" },
-    { id: 2, name: "João", email: "joao@email.com" },
-    { id: 3, name: "Marcos", email: "marcos@email.com" },
-];
+// Rotas de usuário "/users"
+
+
+
 
 app.listen(PORT, () => console.log("O servidor está rodando..."));

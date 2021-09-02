@@ -1,18 +1,19 @@
-const { User } = require("../db/models");
+const { User, Post } = require("../db/models");
 
 async function getAllUsers(req, res, next) {
     try {
         const users = await User.findAll();
-    
+
         res.json(users);
-    } catch(err) {
+    } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
     }
-};
+}
 
 async function getUserById(req, res, next) {
     const userId = req.params.id;
+
     try {
         const user = await User.findOne({
             where: { id: userId }
@@ -20,30 +21,30 @@ async function getUserById(req, res, next) {
 
         if (!user) {
             res.status(404).json({ message: "User not found!" });
-        };
+        }
 
         res.json(user);
-    } catch(err) {
+    } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
-    };
-};
+    }
+}
 
 async function createUser(req, res, next) {
     const { name, email, password } = req.body;
 
     // Verificando se o e-mail já está cadastrado no BD
     try {
-        const [ user, created ] = await User.findOrCreate({
-        where: { email },
-        defaults: {
-            name,
-            password
+        const [user, created] = await User.findOrCreate({
+            where: { email },
+            defaults: {
+                name,
+                password
+            }
+        });
+        if (!created) {
+            return res.status(409).json({ message: "User already exists" });
         }
-    });
-    if (!created) {
-        return res.status(409).json({ message: "User already exists" });
-    }
         res.status(201).json(user);
     } catch (err) {
         console.log(err);
@@ -54,57 +55,67 @@ async function createUser(req, res, next) {
 async function updateUser(req, res, next) {
     const { name } = req.body;
     const userId = req.params.id;
-    
+
     try {
         const user = await User.findOne({
             where: { id: userId }
-        })
+        });
 
         if (!user) {
-            return res.status(404).json({ message: "User not found" })
+            return res.status(404).json({ message: "User not found" });
         }
 
         user.name = name;
         await user.save();
 
         res.json(user);
-    } catch(err) {
+    } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
     }
-};
+}
 
 async function deleteUser(req, res, next) {
-    // Obter o id dos parâmetros
+    // Obter o id dos parametros
     const userId = req.params.id;
     try {
-        // Verificar  se o usuário com aquele id existe
+        // Verificar se o usuario com aquele id existe
         const user = await User.findOne({
             where: { id: userId }
         });
-
-        if (!user < 0) {
-            return res.status(404).json({ message: "User not found" })
-        };
-
-        // Remover o usuário do 
-        await user.destroy();  
-
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+        // Remover o usuario do bd ()
+        await user.destroy();
         res.status(204).end();
-    } catch(err) {
+    } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
     }
-};
+}
 
-async function createPost() {
+async function createPost(req, res, next) {
     const userId = req.params.id;
     const { title, content } = req.body;
     const file = req.file;
-    try {
-        console.log(file),
-        res.end();
-    } catch(err) {
+
+    let image;
+    if (file) {
+        image = `${process.env.APP_URL}/static/${file.filename}`;
+    }
+    
+    try {        
+        const user = await findOne()
+        const post = await Post.create({
+            title,
+            content,
+            image,
+            user_id: userId
+        });
+
+        res.status(201).json(post);
+    } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
     }
