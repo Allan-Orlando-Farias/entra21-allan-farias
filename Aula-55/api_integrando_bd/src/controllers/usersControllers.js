@@ -104,9 +104,16 @@ async function createPost(req, res, next) {
     if (file) {
         image = `${process.env.APP_URL}/static/${file.filename}`;
     }
-    
-    try {        
-        const user = await findOne()
+    // console.log(file);
+    // res.end();
+
+    try {
+        const user = await User.findOne({ where: { id: userId } });
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found!" });
+        }
+
         const post = await Post.create({
             title,
             content,
@@ -117,7 +124,7 @@ async function createPost(req, res, next) {
         res.status(201).json(post);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: "Server error" });
+        res.status(500).json({ message: "Server Error" });
     }
 }
 

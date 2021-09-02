@@ -4,6 +4,7 @@ const PORT = 3000;
 
 // Importando as rotas
 const usersRoutes = require("./routes/usersRoutes");
+const postsRoutes = require("./routes/postsRoutes");
 
 // Definindo o local dos arquivos estáticos
 app.use("/static", express.static("uploads"));
@@ -13,6 +14,7 @@ app.use(express.json());
 
 // Definindo as rotas
 app.use("/users", usersRoutes);
+app.use("/posts", postsRoutes);
 
 // Rotas da raiz "/"
 app.get("/", (request, response) => {
@@ -32,8 +34,6 @@ app.delete("/", (request, response) => {
 });
 
 // Rotas de usuário "/users"
-
-
 
 
 app.listen(PORT, () => console.log("O servidor está rodando..."));
