@@ -9,6 +9,9 @@ import { ListaAlunos } from './componentes/ListaAlunos';
 import { ManipulandoEventos } from './componentes/ManipulandoEventos';
 import { Relogio } from './componentes/Relogio';
 import { Contador } from './componentes/Contador';
+import { ComponentesControlados } from './componentes/ComponentesControlados';
+import { ParOuImpar } from './componentes/ParOuImpar';
+import { Notificacoes } from './componentes/Notificacoes';
 
 function App() {
   return (
@@ -53,8 +56,14 @@ function App() {
         <Card titulo="Ciclos de vida">
           <Relogio />
         </Card>
-        <Card titulo="Componente comtrolados">
+        <Card titulo="Componente controlados">
           <ComponentesControlados />
+        </Card>
+        <Card titulo="Renderização condicional">
+          <ParOuImpar numero={10}/>
+          <ParOuImpar numero={9}/>
+          <hr />
+          <Notificacoes notificacoes={["N1", "N2", "N3"]}/>
         </Card>
       </div>
     </div>
