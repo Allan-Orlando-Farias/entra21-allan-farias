@@ -18,6 +18,16 @@ export function UseStateScreen({ contagemInicial = 0 }) {
                 <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>
                 <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
             </Text>
+            <Text style={{ fontSize: 22 }}>
+                <br></br><br></br>
+                Use o useState caso:<br></br>
+                A) JavaScript primitivos como estado<br></br>
+                B) transições simples de estado<br></br>
+                C) lógica de negócios dentro do seu componente<br></br>
+                D) diferentes propriedades que não mudam de forma correlata e podem ser gerenciadas por ganchos de uso múltiplos<br></br>
+                E) estado co-localizado ao seu componente<br></br>
+                F) uma pequena aplicação (mas as linhas estão embaçadas aqui
+            </Text>
         </ScrollView>
     );
 }
