@@ -26,7 +26,7 @@ export function UseStateScreen({ contagemInicial = 0 }) {
                 C) lógica de negócios dentro do seu componente<br></br>
                 D) diferentes propriedades que não mudam de forma correlata e podem ser gerenciadas por ganchos de uso múltiplos<br></br>
                 E) estado co-localizado ao seu componente<br></br>
-                F) uma pequena aplicação (mas as linhas estão embaçadas aqui
+                F) uma pequena aplicação mas as linhas estão embaçadas aqui
             </Text>
         </ScrollView>
     );
